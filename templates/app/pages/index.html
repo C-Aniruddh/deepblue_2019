@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap material admin template">
+    <meta name="author" content="">
+    
+    <title>Dashboard | CSP</title>
+    
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='base/assets') }}/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="{{url_for('static', filename='base/assets')}}/images/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='base/assets')}}/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/vendor/waves/waves.css">
+    
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/fonts/material-design/material-design.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global')}}/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    
+    <!--[if lt IE 9]>
+    <script src="{{ url_for('static', filename='global')}}/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="{{ url_for('static', filename='global')}}/vendor/media-match/media.match.min.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='global')}}/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+  </head>
+  <body class="animsition">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+              data-toggle="menubar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="hamburger-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+              data-toggle="collapse">
+              <i class="icon md-more" aria-hidden="true"></i>
+            </button>
+            <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+              <img class="navbar-brand-logo" src="{{ url_for('static', filename='base/assets') }}/images/logo.png" title="Remark">
+              <span class="navbar-brand-text hidden-xs-down"> CSP</span>
+            </div>
+            <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
+              data-toggle="collapse">
+              <span class="sr-only">Toggle Search</span>
+              <i class="icon md-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        
+          <div class="navbar-container container-fluid">
+            <!-- Navbar Collapse -->
+            <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+              <!-- Navbar Toolbar -->
+              <ul class="nav navbar-toolbar">
+                <li class="nav-item hidden-float" id="toggleMenubar">
+                  <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                    <i class="icon hamburger hamburger-arrow-left">
+                      <span class="sr-only">Toggle menubar</span>
+                      <span class="hamburger-bar"></span>
+                    </i>
+                  </a>
+                </li>
+                <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+                  <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                    <span class="sr-only">Toggle fullscreen</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden-float">
+                  <a class="nav-link icon md-search" data-toggle="collapse" href="#" data-target="#site-navbar-search"
+                    role="button">
+                    <span class="sr-only">Toggle Search</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Navbar Toolbar -->
+        
+              <!-- Navbar Toolbar Right -->
+              <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+                    data-animation="scale-up" role="button">
+                    <span class="avatar avatar-online">
+                      <img src="{{ url_for('static', filename='global')}}/portraits/5.jpg" alt="...">
+                      <i></i>
+                    </span>
+                  </a>
+                  <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Profile</a>
+                    <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-card" aria-hidden="true"></i> Billing</a>
+                    <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-settings" aria-hidden="true"></i> Settings</a>
+                    <div class="dropdown-divider" role="presentation"></div>
+                    <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> Logout</a>
+                  </div>
+                </li>
+               
+              </ul>
+              <!-- End Navbar Toolbar Right -->
+            </div>
+            <!-- End Navbar Collapse -->
+        
+            <!-- Site Navbar Seach -->
+            <div class="collapse navbar-search-overlap" id="site-navbar-search">
+              <form role="search">
+                <div class="form-group">
+                  <div class="input-search">
+                    <i class="input-search-icon md-search" aria-hidden="true"></i>
+                    <input type="text" class="form-control" name="site-search" placeholder="Search...">
+                    <button type="button" class="input-search-close icon md-close" data-target="#site-navbar-search"
+                      data-toggle="collapse" aria-label="Close"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- End Site Navbar Seach -->
+          </div>
+        </nav>    
+        <div class="site-menubar">
+          <div class="site-menubar-body">
+            <div>
+              <div>
+                <ul class="site-menu" data-plugin="menu">
+                  <li class="site-menu-category">General</li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="/">
+                            <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                            <span class="site-menu-title">Dashboard</span>
+                        </a>
+                  </li>
+                  <li class="site-menu-item">
+                      <a class="animsition-link" href="/app/submit">
+                              <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                              <span class="site-menu-title">New Submission</span>
+                          </a>
+                  </li>
+                  <li class="site-menu-item">
+                      <a class="animsition-link" href="/app/issues">
+                              <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                              <span class="site-menu-title">Existing Issues</span>
+                          </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="/app/myprofile">
+                            <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                            <span class="site-menu-title">Profile</span>
+                        </a>
+                  </li>
+                  <li class="site-menu-item">
+                      <a class="animsition-link" href="../index.html">
+                              <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                              <span class="site-menu-title">Placeholder</span>
+                          </a>
+                  </li>
+                  <li class="site-menu-category">Profile</li>
+                  <li class="site-menu-item">
+                      <a class="animsition-link" href="/app/issues/uploaded">
+                              <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                              <span class="site-menu-title">My Issues</span>
+                          </a>
+                  </li>
+                  <li class="site-menu-item">
+                      <a class="animsition-link" href="/app/edit_profile">
+                              <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                              <span class="site-menu-title">Edit Profile</span>
+                          </a>
+                  </li>
+                  <li class="site-menu-item">
+                      <a class="animsition-link" href="/logout">
+                              <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                              <span class="site-menu-title">Logout</span>
+                          </a>
+                  </li>
+                </ul>
+                <div class="site-menubar-section">
+                  <h5>
+                    Milestone
+                    <span class="float-right">30%</span>
+                  </h5>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar active" style="width: 30%;" role="progressbar"></div>
+                  </div>
+                  <h5>
+                    Release
+                    <span class="float-right">60%</span>
+                  </h5>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-warning" style="width: 60%;" role="progressbar"></div>
+                  </div>
+                </div>      </div>
+            </div>
+          </div>
+      <div class="site-menubar-footer">
+        <a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip"
+          data-original-title="Settings">
+          <span class="icon md-settings" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">
+          <span class="icon md-eye-off" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
+          <span class="icon md-power" aria-hidden="true"></span>
+        </a>
+      </div></div>    <div class="site-gridmenu">
+      <div>
+        <div>
+          <ul>
+            <li>
+              <a href="../apps/mailbox/mailbox.html">
+                <i class="icon md-email"></i>
+                <span>Mailbox</span>
+              </a>
+            </li>
+            <li>
+              <a href="../apps/calendar/calendar.html">
+                <i class="icon md-calendar"></i>
+                <span>Calendar</span>
+              </a>
+            </li>
+            <li>
+              <a href="../apps/contacts/contacts.html">
+                <i class="icon md-account"></i>
+                <span>Contacts</span>
+              </a>
+            </li>
+            <li>
+              <a href="../apps/media/overview.html">
+                <i class="icon md-videocam"></i>
+                <span>Media</span>
+              </a>
+            </li>
+            <li>
+              <a href="../apps/documents/categories.html">
+                <i class="icon md-receipt"></i>
+                <span>Documents</span>
+              </a>
+            </li>
+            <li>
+              <a href="../apps/projects/projects.html">
+                <i class="icon md-image"></i>
+                <span>Project</span>
+              </a>
+            </li>
+            <li>
+              <a href="../apps/forum/forum.html">
+                <i class="icon md-comments"></i>
+                <span>Forum</span>
+              </a>
+            </li>
+            <li>
+              <a href="../index.html">
+                <i class="icon md-view-dashboard"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page -->
+    <div class="page">
+      <div class="page-content container-fluid">
+        <div class="row" data-plugin="matchHeight" data-by-row="true">
+          <div class="col-xl-3 col-md-6">
+            <!-- Widget Linearea One-->
+            <div class="card card-shadow" id="widgetLineareaOne">
+              <div class="card-block p-20 pt-10">
+                <div class="clearfix">
+                  <div class="grey-800 float-left py-10">
+                    <i class="icon md-account grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    User
+                  </div>
+                  <span class="float-right grey-700 font-size-30">1,253</span>
+                </div>
+                <div class="mb-20 grey-500">
+                  <i class="icon md-long-arrow-up green-500 font-size-16"></i>                  15% From this yesterday
+                </div>
+                <div class="ct-chart h-50"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M0,50L0,50C18.04,45.833,36.081,43.056,54.121,37.5C72.161,31.944,90.201,12.5,108.242,12.5C126.282,12.5,144.322,25,162.363,25C180.403,25,198.443,6.25,216.484,6.25C234.524,6.25,252.564,35,270.604,35C288.645,35,306.685,31.25,324.725,31.25C342.766,31.25,360.806,43.75,378.846,50L378.846,50Z" class="ct-area"></path></g></g><g class="ct-labels"></g></svg></div>
+              </div>
+            </div>
+            <!-- End Widget Linearea One -->
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <!-- Widget Linearea Two -->
+            <div class="card card-shadow" id="widgetLineareaTwo">
+              <div class="card-block p-20 pt-10">
+                <div class="clearfix">
+                  <div class="grey-800 float-left py-10">
+                    <i class="icon md-flash grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    VISITS
+                  </div>
+                  <span class="float-right grey-700 font-size-30">2,425</span>
+                </div>
+                <div class="mb-20 grey-500">
+                  <i class="icon md-long-arrow-up green-500 font-size-16"></i>                  34.2% From this week
+                </div>
+                <div class="ct-chart h-50"></div>
+              </div>
+            </div>
+            <!-- End Widget Linearea Two -->
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <!-- Widget Linearea Three -->
+            <div class="card card-shadow" id="widgetLineareaThree">
+              <div class="card-block p-20 pt-10">
+                <div class="clearfix">
+                  <div class="grey-800 float-left py-10">
+                    <i class="icon md-chart grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    Total Clicks
+                  </div>
+                  <span class="float-right grey-700 font-size-30">1,864</span>
+                </div>
+                <div class="mb-20 grey-500">
+                  <i class="icon md-long-arrow-down red-500 font-size-16"></i>                  15% From this yesterday
+                </div>
+                <div class="ct-chart h-50"></div>
+              </div>
+            </div>
+            <!-- End Widget Linearea Three -->
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <!-- Widget Linearea Four -->
+            <div class="card card-shadow" id="widgetLineareaFour">
+              <div class="card-block p-20 pt-10">
+                <div class="clearfix">
+                  <div class="grey-800 float-left py-10">
+                    <i class="icon md-view-list grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    Items
+                  </div>
+                  <span class="float-right grey-700 font-size-30">845</span>
+                </div>
+                <div class="mb-20 grey-500">
+                  <i class="icon md-long-arrow-up green-500 font-size-16"></i>                  18.4% From this yesterday
+                </div>
+                <div class="ct-chart h-50"></div>
+              </div>
+            </div>
+            <!-- End Widget Linearea Four -->
+          </div>
+  
+         
+          <div class="col-xxl-5 col-lg-6" style="height: 537.921px;">
+            <!-- Panel Projects -->
+            <div class="panel" id="projects">
+              <div class="panel-heading">
+                <h3 class="panel-title">Projects</h3>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <td>Projects</td>
+                      <td>Completed</td>
+                      <td>Date</td>
+                      <td>Actions</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>The sun climbing plan</td>
+                      <td>
+                        <span data-plugin="peityPie" data-skin="red" style="display: none;">7/10</span><svg class="peity" height="22" width="22"><path d="M 10.9976 0 A 10.9976 10.9976 0 1 1 0.5382608563924194 14.396045297337924 L 10.9976 10.9976" fill="#d32f2f"></path><path d="M 0.5382608563924194 14.396045297337924 A 10.9976 10.9976 0 0 1 10.997599999999998 0 L 10.9976 10.9976" fill="#ef5350"></path></svg>
+                      </td>
+                      <td>Jan 1, 2017</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit">
+                          <i class="icon md-wrench" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Delete">
+                          <i class="icon md-close" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Lunar probe project</td>
+                      <td>
+                        <span data-plugin="peityPie" data-skin="blue" style="display: none;">3/10</span><svg class="peity" height="22" width="22"><path d="M 10.9976 0 A 10.9976 10.9976 0 0 1 21.45693914360758 14.396045297337922 L 10.9976 10.9976" fill="#1976d2"></path><path d="M 21.45693914360758 14.396045297337922 A 10.9976 10.9976 0 1 1 10.997599999999998 0 L 10.9976 10.9976" fill="#42a5f5"></path></svg>
+                      </td>
+                      <td>Feb 12, 2017</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit">
+                          <i class="icon md-wrench" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Delete">
+                          <i class="icon md-close" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Dream successful plan</td>
+                      <td>
+                        <span data-plugin="peityPie" data-skin="green" style="display: none;">9/10</span><svg class="peity" height="22" width="22"><path d="M 10.9976 0 A 10.9976 10.9976 0 1 1 4.533372909388296 2.100354702662079 L 10.9976 10.9976" fill="#388e3c"></path><path d="M 4.533372909388296 2.100354702662079 A 10.9976 10.9976 0 0 1 10.997599999999998 0 L 10.9976 10.9976" fill="#66bb6a"></path></svg>
+                      </td>
+                      <td>Apr 9, 2017</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit">
+                          <i class="icon md-wrench" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Delete">
+                          <i class="icon md-close" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Office automatization</td>
+                      <td>
+                        <span data-plugin="peityPie" data-skin="orange" style="display: none;">5/10</span><svg class="peity" height="22" width="22"><path d="M 10.9976 0 A 10.9976 10.9976 0 0 1 10.9976 21.9952 L 10.9976 10.9976" fill="#f57c00"></path><path d="M 10.9976 21.9952 A 10.9976 10.9976 0 0 1 10.997599999999998 0 L 10.9976 10.9976" fill="#ffa726"></path></svg>
+                      </td>
+                      <td>May 15, 2017</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit">
+                          <i class="icon md-wrench" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Delete">
+                          <i class="icon md-close" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Open strategy</td>
+                      <td>
+                        <span data-plugin="peityPie" data-skin="brown" style="display: none;">2/10</span><svg class="peity" height="22" width="22"><path d="M 10.9976 0 A 10.9976 10.9976 0 0 1 21.45693914360758 7.599154702662078 L 10.9976 10.9976" fill="#5d4037"></path><path d="M 21.45693914360758 7.599154702662078 A 10.9976 10.9976 0 1 1 10.997599999999998 0 L 10.9976 10.9976" fill="#8d6e63"></path></svg>
+                      </td>
+                      <td>Jun 2, 2017</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit">
+                          <i class="icon md-wrench" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-default waves-effect waves-classic" data-toggle="tooltip" data-original-title="Delete">
+                          <i class="icon md-close" aria-hidden="true"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Projects -->
+          </div>
+  
+          <div class="col-xxl-7 col-lg-6" style="">
+            <!-- Panel Projects Status -->
+            <div class="panel" id="projects-status">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  Projects Status
+                  <span class="badge badge-pill badge-info">5</span>
+                </h3>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <td>ID</td>
+                      <td>Project</td>
+                      <td>Status</td>
+                      <td class="text-left">Progress</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>619</td>
+                      <td>The sun climbing plan</td>
+                      <td>
+                        <span class="badge badge-primary">Developing</span>
+                      </td>
+                      <td>
+                        <span data-plugin="peityLine" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span><svg class="peity" height="22" width="44"><polygon fill="#90caf9" points="0 13.622 0 0.5 4.887822222222223 5.748799999999999 9.775644444444445 8.3732 14.663466666666668 16.2464 19.55128888888889 21.4952 24.439111111111114 18.8708 29.326933333333336 8.3732 34.214755555555556 5.748799999999999 39.10257777777778 0.5 43.99040000000001 8.3732 43.9904 13.622"></polygon><polyline fill="none" points="0 0.5 4.887822222222223 5.748799999999999 9.775644444444445 8.3732 14.663466666666668 16.2464 19.55128888888889 21.4952 24.439111111111114 18.8708 29.326933333333336 8.3732 34.214755555555556 5.748799999999999 39.10257777777778 0.5 43.99040000000001 8.3732" stroke="#1e88e5" stroke-width="1" stroke-linecap="square"></polyline></svg>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>620</td>
+                      <td>Lunar probe project</td>
+                      <td>
+                        <span class="badge badge-warning">Design</span>
+                      </td>
+                      <td>
+                        <span data-plugin="peityLine" style="display: none;">1,-1,0,2,3,1,-1,1,4,2</span><svg class="peity" height="22" width="44"><polygon fill="#90caf9" points="0 17.29616 0 13.09712 4.887822222222223 21.4952 9.775644444444445 17.29616 14.663466666666668 8.89808 19.55128888888889 4.69904 24.439111111111114 13.09712 29.326933333333336 21.4952 34.214755555555556 13.09712 39.10257777777778 0.5 43.99040000000001 8.89808 43.9904 17.29616"></polygon><polyline fill="none" points="0 13.09712 4.887822222222223 21.4952 9.775644444444445 17.29616 14.663466666666668 8.89808 19.55128888888889 4.69904 24.439111111111114 13.09712 29.326933333333336 21.4952 34.214755555555556 13.09712 39.10257777777778 0.5 43.99040000000001 8.89808" stroke="#1e88e5" stroke-width="1" stroke-linecap="square"></polyline></svg>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>621</td>
+                      <td>Dream successful plan</td>
+                      <td>
+                        <span class="badge badge-info">Testing</span>
+                      </td>
+                      <td>
+                        <span data-plugin="peityLine" style="display: none;">2,3,-1,-3,-1,0,2,4,5,3</span><svg class="peity" height="22" width="44"><polygon fill="#90caf9" points="0 13.622 0 8.3732 4.887822222222223 5.748799999999999 9.775644444444445 16.2464 14.663466666666668 21.4952 19.55128888888889 16.2464 24.439111111111114 13.622 29.326933333333336 8.3732 34.214755555555556 3.1244000000000014 39.10257777777778 0.5 43.99040000000001 5.748799999999999 43.9904 13.622"></polygon><polyline fill="none" points="0 8.3732 4.887822222222223 5.748799999999999 9.775644444444445 16.2464 14.663466666666668 21.4952 19.55128888888889 16.2464 24.439111111111114 13.622 29.326933333333336 8.3732 34.214755555555556 3.1244000000000014 39.10257777777778 0.5 43.99040000000001 5.748799999999999" stroke="#1e88e5" stroke-width="1" stroke-linecap="square"></polyline></svg>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>622</td>
+                      <td>Office automatization</td>
+                      <td>
+                        <span class="badge badge-danger">Canceled</span>
+                      </td>
+                      <td>
+                        <span data-plugin="peityLine" style="display: none;">1,-2,0,2,4,5,3,2,4,2</span><svg class="peity" height="22" width="44"><polygon fill="#90caf9" points="0 15.496571428571428 0 12.497257142857144 4.887822222222223 21.4952 9.775644444444445 15.496571428571428 14.663466666666668 9.497942857142858 19.55128888888889 3.499314285714288 24.439111111111114 0.5 29.326933333333336 6.498628571428572 34.214755555555556 9.497942857142858 39.10257777777778 3.499314285714288 43.99040000000001 9.497942857142858 43.9904 15.496571428571428"></polygon><polyline fill="none" points="0 12.497257142857144 4.887822222222223 21.4952 9.775644444444445 15.496571428571428 14.663466666666668 9.497942857142858 19.55128888888889 3.499314285714288 24.439111111111114 0.5 29.326933333333336 6.498628571428572 34.214755555555556 9.497942857142858 39.10257777777778 3.499314285714288 43.99040000000001 9.497942857142858" stroke="#1e88e5" stroke-width="1" stroke-linecap="square"></polyline></svg>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>623</td>
+                      <td>Open strategy</td>
+                      <td>
+                        <span class="badge badge-default">Reply waiting</span>
+                      </td>
+                      <td>
+                        <span data-plugin="peityLine" style="display: none;">4,2,-1,-3,-2,1,3,5,2,4</span><svg class="peity" height="22" width="44"><polygon fill="#90caf9" points="0 13.622 0 3.1244000000000014 4.887822222222223 8.3732 9.775644444444445 16.2464 14.663466666666668 21.4952 19.55128888888889 18.8708 24.439111111111114 10.9976 29.326933333333336 5.748799999999999 34.214755555555556 0.5 39.10257777777778 8.3732 43.99040000000001 3.1244000000000014 43.9904 13.622"></polygon><polyline fill="none" points="0 3.1244000000000014 4.887822222222223 8.3732 9.775644444444445 16.2464 14.663466666666668 21.4952 19.55128888888889 18.8708 24.439111111111114 10.9976 29.326933333333336 5.748799999999999 34.214755555555556 0.5 39.10257777777778 8.3732 43.99040000000001 3.1244000000000014" stroke="#1e88e5" stroke-width="1" stroke-linecap="square"></polyline></svg>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Projects Stats -->
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <!-- End Page -->
+
+
+    <!-- Footer -->
+    <!--<footer class="site-footer">
+      <div class="site-footer-legal">© 2018 <a href="http://themeforest.net/item/remark-responsive-bootstrap-admin-template/11989202">Remark</a></div>
+      <div class="site-footer-right">
+        Crafted with <i class="red-600 icon md-favorite"></i> by <a href="https://themeforest.net/user/creation-studio">Creation Studio</a>
+      </div>
+    </footer>-->
+    <!-- Core  -->
+    <script src="{{ url_for('static', filename='global')}}/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/jquery/jquery.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/bootstrap/bootstrap.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/animsition/animsition.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/waves/waves.js"></script>
+    
+    <!-- Plugins -->
+    <script src="{{ url_for('static', filename='global')}}/vendor/switchery/switchery.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/intro-js/intro.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/screenfull/screenfull.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/vendor/slidepanel/jquery-slidePanel.js"></script>
+    
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='global')}}/js/Component.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/js/Plugin.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/js/Base.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/js/Config.js"></script>
+    
+    <script src="{{url_for('static', filename='base/assets')}}/js/Section/Menubar.js"></script>
+    <script src="{{url_for('static', filename='base/assets')}}/js/Section/GridMenu.js"></script>
+    <script src="{{url_for('static', filename='base/assets')}}/js/Section/Sidebar.js"></script>
+    <script src="{{url_for('static', filename='base/assets')}}/js/Section/PageAside.js"></script>
+    <script src="{{url_for('static', filename='base/assets')}}/js/Plugin/menu.js"></script>
+    
+    <script src="{{ url_for('static', filename='global')}}/js/config/colors.js"></script>
+    <script src="{{url_for('static', filename='base/assets')}}/js/config/tour.js"></script>
+    <script>Config.set('assets', '../../assets');</script>
+    
+    <!-- Page -->
+    <script src="{{url_for('static', filename='base/assets')}}/js/Site.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/js/Plugin/asscrollable.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/js/Plugin/slidepanel.js"></script>
+    <script src="{{ url_for('static', filename='global')}}/js/Plugin/switchery.js"></script>
+    
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+        });
+      })(document, window, jQuery);
+    </script>
+    
+  </body>
+</html>
