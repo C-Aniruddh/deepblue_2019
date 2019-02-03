@@ -1,0 +1,464 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+MERGED from [com.android.support:multidex:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e5fe282119c8cb46fabfc9477239caea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/MaterialStyledDialogs-2.1.aar/91b7217e4f411321e1777d245417873b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.klinkerapps:sliding-activity:1.5.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sliding-activity-1.5.2.aar/53c430823fe8c7ffbce01ff1828de3e1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/69d5d9869d935d6955bcd3f129a0cd36/AndroidManifest.xml:2:1-15:12
+MERGED from [com.klinkerapps:peekview:1.2.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/peekview-1.2.3.aar/ca8bfa396b3edda9b68706208044acf2/AndroidManifest.xml:15:1-24:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.7] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/library-1.1.7.aar/f3cb99350b4db2fcdffa4d06c9918099/AndroidManifest.xml:6:1-16:12
+MERGED from [com.android.support:design:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/e64a47f0032f1148e0fb57387f26e188/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/c1f5ae061a253d609185b2fa5e686837/AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-0.0.0-nightly.aar/037576ef5ab3b8b980fb82f6a37df2e8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/afc179933758569c87eeff749d47b1ab/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/49ad723df833ab6e14f8ab2df117f572/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/913df91e57cbd2727683f25f37b6df2f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38defc2397f3d1eefbce1caba67d6d5f/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/b682d1228d1b7dbfae27908db23ef715/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/a4c7ff7ca7e5d035d03cc9a461dd067f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/cd87f8f207e107b8e24b74fceab59338/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f46bc70c167d4a3da078ac51b55f1cda/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/34a31ce503478cfd0622fb57a229bc1a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0e9231e1f8d84b8d7819ffe16d191f79/AndroidManifest.xml:2:1-11:12
+MERGED from [com.balysv:material-ripple:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-ripple-1.0.2.aar/606d6bd2e9e404d6552b6a5be015a0b5/AndroidManifest.xml:2:1-14:12
+MERGED from [io.github.inflationx:calligraphy3:3.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/calligraphy3-3.0.0.aar/564ce6890797d50548faacd39f105af5/AndroidManifest.xml:2:1-13:12
+MERGED from [io.github.inflationx:viewpump:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewpump-1.0.0.aar/222effd2d9feede1a4defcf283306800/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.ar.sceneform.ux:sceneform-ux:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sceneform-ux-1.6.0.aar/47586a6e4a2e3ed120c07d8d359ad876/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/84a2f7404451a6c4c45c084192cbfcaa/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-fragment:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/0dad2ad4c9cf43ac8e18db947111d1c8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/ad6ef713f056f680ef512e8243716c6e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/140d04c8a5f93ec8398a74cfff013645/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/d1aa52769f62b0a7b2ec558042911a56/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/faeba38208bbf90674947d3582763b55/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:palette-v7:27.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/palette-v7-27.0.2.aar/70f763f6a63503232884ed3515617997/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/cc5cba9d6769fdd47f4a63fddd2f30d5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ce7c5a5ec1aa6d647d3b0b9f49e6ed1d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.ar.sceneform:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/623ff181f54a1bab96015e4049d65965/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd183f9caf082a1f2c45b97bdfcaec7c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/1857d00bbc00fda54b1feba655e8f4fe/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/8447df39f0521a90412a217b28964710/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/56606636dbac787fc18b2945c4ab127a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/644695c4ad6863fea0fcf2f0b65b6430/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/05b525edc052d945286153f205199e88/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/00d29398a7c8ce4109038f853d406e62/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/3ea51627ed21784cacfe4b3ffb83f49f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/e3b25963f628dfcee16aa9e4595e5dd8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/dc3db94b94800c261c110d56ed022300/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/2be3e8e9173888f7c6237640967ab6c2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/db1adcbb2a57529a3ea09b3ed23632ca/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/70e789a6a7b892420fc69bf2d83f72ad/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/e49b8744b5ffab0c7547254227f38a5e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/a8e52ba9822f6eb7fd344ae4de4ba1db/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/c30f1230c55f1455a8d8516ec8b8668c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/6e63814894a286f0df9175808beaef82/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/15b1e68caafb842306bd85e05624c0a1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a30f632986d32ae48d9a55ea6389709c/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/16fae35ab9b9864ee48d3ad765150f26/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/171b3a57dc614b16eb05539ae44ebdc1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/d170ab8d383c3c3879057b279d14fa70/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/1faf078b6ee552fa056e0bbd2f117078/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/f3d62b3aa7f96689a5e1bad6f72b7be6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/2f90d64de298a34d97dc3377e2fbd7d2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e4990f1e25cdbab895ff1bdc810b8896/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/39b74aecc7421e58cd45b88947b5228a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/4fcbd5d5785ceee714edd38050fc8cb5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/94608dde29e94dd6034680471144530b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9c709d0ce4773890728c8fb1f654ffed/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/873390712067a0560dd359c2068d8b48/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/eabfe61a1a7117d6c8a7e9fd334b0648/AndroidManifest.xml:17:1-22:12
+MERGED from [jp.wasabeef:blurry:2.0.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/blurry-2.0.3.aar/099ca7b9207568688f59bcef8379bb30/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.ar.sceneform:rendering:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/rendering-1.6.0.aar/c69fedce3a7c0c71a5b9f25ca57ebfce/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.ar.sceneform:sceneform-base:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sceneform-base-1.6.0.aar/61f5e948963a5117f5bdac3b8a54a2e1/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.ar.sceneform:filament-android:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/filament-android-1.6.0.aar/84c4944dd0325e9b7e88060e98a297c0/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/84e0b8f11c7a579b129603b2c66ae740/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:17:1-46:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+	package
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:18:5-35
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:17:5-51
+	android:versionCode
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:11-69
+uses-sdk
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:multidex:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e5fe282119c8cb46fabfc9477239caea/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e5fe282119c8cb46fabfc9477239caea/AndroidManifest.xml:20:5-43
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/MaterialStyledDialogs-2.1.aar/91b7217e4f411321e1777d245417873b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/MaterialStyledDialogs-2.1.aar/91b7217e4f411321e1777d245417873b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.klinkerapps:sliding-activity:1.5.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sliding-activity-1.5.2.aar/53c430823fe8c7ffbce01ff1828de3e1/AndroidManifest.xml:23:5-25:41
+MERGED from [com.klinkerapps:sliding-activity:1.5.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sliding-activity-1.5.2.aar/53c430823fe8c7ffbce01ff1828de3e1/AndroidManifest.xml:23:5-25:41
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/69d5d9869d935d6955bcd3f129a0cd36/AndroidManifest.xml:8:5-11:75
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/69d5d9869d935d6955bcd3f129a0cd36/AndroidManifest.xml:8:5-11:75
+MERGED from [com.klinkerapps:peekview:1.2.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/peekview-1.2.3.aar/ca8bfa396b3edda9b68706208044acf2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.klinkerapps:peekview:1.2.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/peekview-1.2.3.aar/ca8bfa396b3edda9b68706208044acf2/AndroidManifest.xml:20:5-22:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.7] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/library-1.1.7.aar/f3cb99350b4db2fcdffa4d06c9918099/AndroidManifest.xml:12:5-14:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.7] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/library-1.1.7.aar/f3cb99350b4db2fcdffa4d06c9918099/AndroidManifest.xml:12:5-14:41
+MERGED from [com.android.support:design:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/e64a47f0032f1148e0fb57387f26e188/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/e64a47f0032f1148e0fb57387f26e188/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/c1f5ae061a253d609185b2fa5e686837/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/c1f5ae061a253d609185b2fa5e686837/AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-0.0.0-nightly.aar/037576ef5ab3b8b980fb82f6a37df2e8/AndroidManifest.xml:5:5-7:41
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-0.0.0-nightly.aar/037576ef5ab3b8b980fb82f6a37df2e8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/afc179933758569c87eeff749d47b1ab/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/afc179933758569c87eeff749d47b1ab/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/49ad723df833ab6e14f8ab2df117f572/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/49ad723df833ab6e14f8ab2df117f572/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/913df91e57cbd2727683f25f37b6df2f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/913df91e57cbd2727683f25f37b6df2f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38defc2397f3d1eefbce1caba67d6d5f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38defc2397f3d1eefbce1caba67d6d5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/b682d1228d1b7dbfae27908db23ef715/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/b682d1228d1b7dbfae27908db23ef715/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/a4c7ff7ca7e5d035d03cc9a461dd067f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/a4c7ff7ca7e5d035d03cc9a461dd067f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/cd87f8f207e107b8e24b74fceab59338/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/cd87f8f207e107b8e24b74fceab59338/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f46bc70c167d4a3da078ac51b55f1cda/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f46bc70c167d4a3da078ac51b55f1cda/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/34a31ce503478cfd0622fb57a229bc1a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/34a31ce503478cfd0622fb57a229bc1a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0e9231e1f8d84b8d7819ffe16d191f79/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0e9231e1f8d84b8d7819ffe16d191f79/AndroidManifest.xml:7:5-43
+MERGED from [com.balysv:material-ripple:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-ripple-1.0.2.aar/606d6bd2e9e404d6552b6a5be015a0b5/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv:material-ripple:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-ripple-1.0.2.aar/606d6bd2e9e404d6552b6a5be015a0b5/AndroidManifest.xml:8:5-10:41
+MERGED from [io.github.inflationx:calligraphy3:3.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/calligraphy3-3.0.0.aar/564ce6890797d50548faacd39f105af5/AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.inflationx:calligraphy3:3.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/calligraphy3-3.0.0.aar/564ce6890797d50548faacd39f105af5/AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.inflationx:viewpump:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewpump-1.0.0.aar/222effd2d9feede1a4defcf283306800/AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.inflationx:viewpump:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewpump-1.0.0.aar/222effd2d9feede1a4defcf283306800/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.ar.sceneform.ux:sceneform-ux:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sceneform-ux-1.6.0.aar/47586a6e4a2e3ed120c07d8d359ad876/AndroidManifest.xml:20:5-44
+MERGED from [com.google.ar.sceneform.ux:sceneform-ux:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sceneform-ux-1.6.0.aar/47586a6e4a2e3ed120c07d8d359ad876/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/84a2f7404451a6c4c45c084192cbfcaa/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/84a2f7404451a6c4c45c084192cbfcaa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/0dad2ad4c9cf43ac8e18db947111d1c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/0dad2ad4c9cf43ac8e18db947111d1c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/ad6ef713f056f680ef512e8243716c6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/ad6ef713f056f680ef512e8243716c6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/140d04c8a5f93ec8398a74cfff013645/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/140d04c8a5f93ec8398a74cfff013645/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/d1aa52769f62b0a7b2ec558042911a56/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/d1aa52769f62b0a7b2ec558042911a56/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/faeba38208bbf90674947d3582763b55/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/faeba38208bbf90674947d3582763b55/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:27.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/palette-v7-27.0.2.aar/70f763f6a63503232884ed3515617997/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:27.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/palette-v7-27.0.2.aar/70f763f6a63503232884ed3515617997/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/cc5cba9d6769fdd47f4a63fddd2f30d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/cc5cba9d6769fdd47f4a63fddd2f30d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ce7c5a5ec1aa6d647d3b0b9f49e6ed1d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ce7c5a5ec1aa6d647d3b0b9f49e6ed1d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.ar.sceneform:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/623ff181f54a1bab96015e4049d65965/AndroidManifest.xml:5:5-44
+MERGED from [com.google.ar.sceneform:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/623ff181f54a1bab96015e4049d65965/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd183f9caf082a1f2c45b97bdfcaec7c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd183f9caf082a1f2c45b97bdfcaec7c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/1857d00bbc00fda54b1feba655e8f4fe/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/1857d00bbc00fda54b1feba655e8f4fe/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/8447df39f0521a90412a217b28964710/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/8447df39f0521a90412a217b28964710/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/56606636dbac787fc18b2945c4ab127a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/56606636dbac787fc18b2945c4ab127a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/644695c4ad6863fea0fcf2f0b65b6430/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/644695c4ad6863fea0fcf2f0b65b6430/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/05b525edc052d945286153f205199e88/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/05b525edc052d945286153f205199e88/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/00d29398a7c8ce4109038f853d406e62/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/00d29398a7c8ce4109038f853d406e62/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/3ea51627ed21784cacfe4b3ffb83f49f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/3ea51627ed21784cacfe4b3ffb83f49f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/e3b25963f628dfcee16aa9e4595e5dd8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/e3b25963f628dfcee16aa9e4595e5dd8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/dc3db94b94800c261c110d56ed022300/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/dc3db94b94800c261c110d56ed022300/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/2be3e8e9173888f7c6237640967ab6c2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/2be3e8e9173888f7c6237640967ab6c2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/db1adcbb2a57529a3ea09b3ed23632ca/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/db1adcbb2a57529a3ea09b3ed23632ca/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/70e789a6a7b892420fc69bf2d83f72ad/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/70e789a6a7b892420fc69bf2d83f72ad/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/e49b8744b5ffab0c7547254227f38a5e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/e49b8744b5ffab0c7547254227f38a5e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/a8e52ba9822f6eb7fd344ae4de4ba1db/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/a8e52ba9822f6eb7fd344ae4de4ba1db/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/c30f1230c55f1455a8d8516ec8b8668c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/c30f1230c55f1455a8d8516ec8b8668c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/6e63814894a286f0df9175808beaef82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/6e63814894a286f0df9175808beaef82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/15b1e68caafb842306bd85e05624c0a1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/15b1e68caafb842306bd85e05624c0a1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a30f632986d32ae48d9a55ea6389709c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a30f632986d32ae48d9a55ea6389709c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/16fae35ab9b9864ee48d3ad765150f26/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/16fae35ab9b9864ee48d3ad765150f26/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/171b3a57dc614b16eb05539ae44ebdc1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/171b3a57dc614b16eb05539ae44ebdc1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/d170ab8d383c3c3879057b279d14fa70/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/d170ab8d383c3c3879057b279d14fa70/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/1faf078b6ee552fa056e0bbd2f117078/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/1faf078b6ee552fa056e0bbd2f117078/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/f3d62b3aa7f96689a5e1bad6f72b7be6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/f3d62b3aa7f96689a5e1bad6f72b7be6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/2f90d64de298a34d97dc3377e2fbd7d2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/2f90d64de298a34d97dc3377e2fbd7d2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e4990f1e25cdbab895ff1bdc810b8896/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e4990f1e25cdbab895ff1bdc810b8896/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/39b74aecc7421e58cd45b88947b5228a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/39b74aecc7421e58cd45b88947b5228a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/4fcbd5d5785ceee714edd38050fc8cb5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/4fcbd5d5785ceee714edd38050fc8cb5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/94608dde29e94dd6034680471144530b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/94608dde29e94dd6034680471144530b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9c709d0ce4773890728c8fb1f654ffed/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9c709d0ce4773890728c8fb1f654ffed/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/873390712067a0560dd359c2068d8b48/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/873390712067a0560dd359c2068d8b48/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/eabfe61a1a7117d6c8a7e9fd334b0648/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/eabfe61a1a7117d6c8a7e9fd334b0648/AndroidManifest.xml:20:5-44
+MERGED from [jp.wasabeef:blurry:2.0.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/blurry-2.0.3.aar/099ca7b9207568688f59bcef8379bb30/AndroidManifest.xml:8:5-10:41
+MERGED from [jp.wasabeef:blurry:2.0.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/blurry-2.0.3.aar/099ca7b9207568688f59bcef8379bb30/AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.ar.sceneform:rendering:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/rendering-1.6.0.aar/c69fedce3a7c0c71a5b9f25ca57ebfce/AndroidManifest.xml:5:5-44
+MERGED from [com.google.ar.sceneform:rendering:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/rendering-1.6.0.aar/c69fedce3a7c0c71a5b9f25ca57ebfce/AndroidManifest.xml:5:5-44
+MERGED from [com.google.ar.sceneform:filament-android:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/filament-android-1.6.0.aar/84c4944dd0325e9b7e88060e98a297c0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.ar.sceneform:filament-android:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/filament-android-1.6.0.aar/84c4944dd0325e9b7e88060e98a297c0/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.core:runtime:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/84e0b8f11c7a579b129603b2c66ae740/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/84e0b8f11c7a579b129603b2c66ae740/AndroidManifest.xml:20:5-44
+MERGED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:26:5-28:41
+MERGED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:26:5-28:41
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:20:5-22:41
+	tools:overrideLibrary
+		ADDED from [com.afollestad.material-dialogs:core:0.9.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/69d5d9869d935d6955bcd3f129a0cd36/AndroidManifest.xml:11:9-72
+	android:targetSdkVersion
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:22:9-38
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:21:9-35
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:24:5-65
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:24:22-62
+uses-feature#android.hardware.camera
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:26:5-60
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:26:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:27:5-70
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:27:19-67
+uses-feature#android.hardware.camera2.full
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:28:5-66
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:28:19-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:30:5-81
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:30:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:31:5-71
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:31:22-68
+uses-permission#android.permission.INTERNET
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:32:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:32:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:33:5-75
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:33:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:34:5-80
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:34:22-77
+uses-feature#android.hardware.camera.ar
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:36:5-63
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:36:19-60
+application
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:38:5-86:19
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/69d5d9869d935d6955bcd3f129a0cd36/AndroidManifest.xml:13:5-20
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/69d5d9869d935d6955bcd3f129a0cd36/AndroidManifest.xml:13:5-20
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-0.0.0-nightly.aar/037576ef5ab3b8b980fb82f6a37df2e8/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-0.0.0-nightly.aar/037576ef5ab3b8b980fb82f6a37df2e8/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/afc179933758569c87eeff749d47b1ab/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/afc179933758569c87eeff749d47b1ab/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/49ad723df833ab6e14f8ab2df117f572/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/49ad723df833ab6e14f8ab2df117f572/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/913df91e57cbd2727683f25f37b6df2f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/913df91e57cbd2727683f25f37b6df2f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38defc2397f3d1eefbce1caba67d6d5f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38defc2397f3d1eefbce1caba67d6d5f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f46bc70c167d4a3da078ac51b55f1cda/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f46bc70c167d4a3da078ac51b55f1cda/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0e9231e1f8d84b8d7819ffe16d191f79/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/0e9231e1f8d84b8d7819ffe16d191f79/AndroidManifest.xml:9:5-20
+MERGED from [com.balysv:material-ripple:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-ripple-1.0.2.aar/606d6bd2e9e404d6552b6a5be015a0b5/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv:material-ripple:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-ripple-1.0.2.aar/606d6bd2e9e404d6552b6a5be015a0b5/AndroidManifest.xml:12:5-20
+MERGED from [io.github.inflationx:calligraphy3:3.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/calligraphy3-3.0.0.aar/564ce6890797d50548faacd39f105af5/AndroidManifest.xml:11:5-20
+MERGED from [io.github.inflationx:calligraphy3:3.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/calligraphy3-3.0.0.aar/564ce6890797d50548faacd39f105af5/AndroidManifest.xml:11:5-20
+MERGED from [io.github.inflationx:viewpump:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewpump-1.0.0.aar/222effd2d9feede1a4defcf283306800/AndroidManifest.xml:11:5-20
+MERGED from [io.github.inflationx:viewpump:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/viewpump-1.0.0.aar/222effd2d9feede1a4defcf283306800/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/84a2f7404451a6c4c45c084192cbfcaa/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/84a2f7404451a6c4c45c084192cbfcaa/AndroidManifest.xml:22:5-20
+MERGED from [androidx.core:core:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/6e63814894a286f0df9175808beaef82/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/6e63814894a286f0df9175808beaef82/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a30f632986d32ae48d9a55ea6389709c/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a30f632986d32ae48d9a55ea6389709c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.ar.sceneform:sceneform-base:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sceneform-base-1.6.0.aar/61f5e948963a5117f5bdac3b8a54a2e1/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.ar.sceneform:sceneform-base:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sceneform-base-1.6.0.aar/61f5e948963a5117f5bdac3b8a54a2e1/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:30:5-44:19
+MERGED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:30:5-44:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/6e63814894a286f0df9175808beaef82/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:43:9-41
+	android:debuggable
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:41:9-34
+	tools:ignore
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:45:9-48
+	android:icon
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:42:9-45
+	android:allowBackup
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:40:9-35
+	android:theme
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:44:9-40
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:39:9-45
+uses-library#com.google.android.maps
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:46:9-64
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:46:23-61
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:49:9-51:55
+	android:value
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:51:13-52
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:50:13-58
+meta-data#com.google.ar.core
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:52:9-54:40
+	android:value
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:54:13-37
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:53:13-46
+activity#io.aniruddh.deepblue.DashboardActivity
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:56:9-62:20
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:56:19-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:57:13-61:29
+action#android.intent.action.MAIN
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:58:17-69
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:58:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:60:17-77
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:60:27-74
+activity#io.aniruddh.deepblue.MapActivity
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:63:9-49
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:63:19-46
+activity#io.aniruddh.deepblue.DetectorActivity
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:64:9-77:20
+	android:screenOrientation
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:67:13-49
+	android:label
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:66:13-60
+	android:theme
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:68:13-49
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:65:13-45
+activity#io.aniruddh.deepblue.IssueActivity
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:78:9-51
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:78:19-48
+activity#io.aniruddh.deepblue.SingleIssueActivity
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:79:9-83:58
+	android:excludeFromRecents
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:81:13-46
+	android:theme
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:83:13-55
+	android:taskAffinity
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:82:13-36
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:80:13-48
+activity#io.aniruddh.deepblue.ManualMode
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:84:9-48
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:84:19-45
+activity#io.aniruddh.deepblue.CameraCalibration
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:85:9-64
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:85:19-52
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/5ded1b1a6722180d2f04c4d4d326a38c/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38defc2397f3d1eefbce1caba67d6d5f/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38defc2397f3d1eefbce1caba67d6d5f/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38defc2397f3d1eefbce1caba67d6d5f/AndroidManifest.xml:24:13-58
+activity#com.google.ar.core.InstallActivity
+ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:33:9-39:80
+	android:excludeFromRecents
+		ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:36:13-46
+	android:launchMode
+		ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:38:13-43
+	android:exported
+		ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:37:13-37
+	android:configChanges
+		ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:35:13-74
+	android:theme
+		ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:39:13-77
+	android:name
+		ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:34:13-62
+meta-data#com.google.ar.core.min_apk_version
+ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:41:9-43:41
+	android:value
+		ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:43:13-38
+	android:name
+		ADDED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:42:13-62

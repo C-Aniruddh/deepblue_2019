@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="85dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/swipe_up_handle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/issue_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_xxlarge"
+                    android:layout_marginStart="@dimen/spacing_xxlarge"
+                    android:gravity="center_vertical"
+                    android:minHeight="50dp"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingStart="@dimen/spacing_large"
+                    android:text="Issue Category"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                <TextView
+                    android:id="@+id/issue_locality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:paddingEnd="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAllCaps="true"
+                    android:text="Issue Locality"
+                    android:textSize="12sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/spacing_xxlarge"
+                    android:layout_marginStart="@dimen/spacing_xxlarge"
+                    android:background="@color/grey_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/grey_20"
+                            app:srcCompat="@drawable/ic_menu" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_mxlarge"
+                            android:layout_height="0dp" />
+
+                        <TextView
+                            android:id="@+id/issue_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Description"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/grey_90" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/grey_20"
+                            app:srcCompat="@drawable/ic_location" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_mxlarge"
+                            android:layout_height="0dp" />
+
+                        <TextView
+                            android:id="@+id/issue_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Mumbai"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/grey_90" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/grey_20"
+                            app:srcCompat="@drawable/camera" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_mxlarge"
+                            android:layout_height="0dp" />
+
+                        <ImageView
+                            android:id="@+id/issue_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="Issue Image"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_launcher"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/grey_20"
+                            app:srcCompat="@drawable/camera" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_mxlarge"
+                            android:layout_height="0dp" />
+
+                        <ImageView
+                            android:id="@+id/issue_image_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="Issue Image"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_launcher"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/grey_20"
+                            app:srcCompat="@drawable/ic_schedule" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_mxlarge"
+                            android:layout_height="0dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Wed, 10 AM - 9 PM"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/grey_90" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

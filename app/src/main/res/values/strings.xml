@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2016 The TensorFlow Authors. All Rights Reserved.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="issues">Issues</string>
+    <string name="create_issue">Create Issue</string>
+    <string name="profile">Profile</string>
+    <string name="title">Title</string>
+    <string name="csp_16">CSP16</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="auto_manual_desc">Currently, we support two methods of reporting an issue, autonomous mode and manual mode. Please select the suitable choice from below.</string>
+    <string name="create_new_issue">Create New Issue</string>
+    <string name="learn_more">Learn More</string>
+    <string name="start">Start</string>
+    <string name="autonomous_desc">Suitable for reporting issues autonomously while driving your car. Please setup your phone in such a manner that the camera can focus on the road! This method will also warn you about potholes that have been reported earlier!</string>
+    <string name="new_issue">Create New Issue</string>
+    <string name="existing_issues">Existing Issues</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyArkE5QBTCuK-W6XR6yI1ZGPZqHoyk1nL8
+    </string>
+    <string name="manual_desc">Suitable for reporting issues nearby, where-in you can physically access the location of damage without any risk.</string>
+    <string name="description">Description</string>
+</resources>
