@@ -47,10 +47,10 @@
     <application
         android:name="io.aniruddh.deepblue.network.NetworkClass"
         android:allowBackup="true"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <uses-library android:name="com.google.android.maps" />
 

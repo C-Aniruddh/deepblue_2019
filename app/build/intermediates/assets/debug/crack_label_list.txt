@@ -1,0 +1,9 @@
+???
+D00-Lo-LinearCrack
+D01-Lo-Construction
+D10-La-Interval
+D11-La-Construction
+D20-Shallow-Pothole
+D40-Pothole
+D43-GenericRoadDamage
+D44-CrossWalk

@@ -1,0 +1,3 @@
+# Referenced at /home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:47
+-keep class io.aniruddh.deepblue.network.NetworkClass { <init>(...); }
+

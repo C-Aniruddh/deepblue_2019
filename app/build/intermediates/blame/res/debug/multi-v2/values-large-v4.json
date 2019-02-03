@@ -4,23 +4,6 @@
             "outputFile": "/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/aniruddh/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/84a2f7404451a6c4c45c084192cbfcaa/res/values-large-v4/values-large-v4.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,177",
-                        "endColumns": "121,133",
-                        "endOffsets": "172,306"
-                    },
-                    "to": {
-                        "startLines": "15,16",
-                        "startColumns": "4,4",
-                        "startOffsets": "968,1090",
-                        "endColumns": "121,133",
-                        "endOffsets": "1085,1219"
-                    }
-                },
-                {
                     "source": "/home/aniruddh/.gradle/caches/transforms-1/files-1.1/MaterialStyledDialogs-2.1.aar/91b7217e4f411321e1777d245417873b/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",

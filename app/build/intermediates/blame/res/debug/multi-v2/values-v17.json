@@ -4,17 +4,6 @@
             "outputFile": "/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/aniruddh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd183f9caf082a1f2c45b97bdfcaec7c/res/values-v17/values-v17.xml",
-                    "from": {
-                        "startLines": "18,22,29",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "936,1161,1559",
-                        "endLines": "21,24,32",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "1156,1326,1778"
-                    }
-                },
-                {
                     "source": "/home/aniruddh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/c1f5ae061a253d609185b2fa5e686837/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
@@ -23,14 +12,6 @@
                         "endLines": "4,8,11,14,17,21,25,28,31,34,38,41,45,49",
                         "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
                         "endOffsets": "223,451,609,759,931,1159,1401,1572,1746,1915,2188,2388,2592,2921"
-                    },
-                    "to": {
-                        "startLines": "2,5,9,12,15,25,33,37,40,43,46,50,53,57",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,228,456,614,764,1331,1783,2025,2196,2370,2539,2812,3012,3216",
-                        "endLines": "4,8,11,14,17,28,36,39,42,45,49,52,56,60",
-                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
-                        "endOffsets": "223,451,609,759,931,1554,2020,2191,2365,2534,2807,3007,3211,3540"
                     }
                 }
             ]
