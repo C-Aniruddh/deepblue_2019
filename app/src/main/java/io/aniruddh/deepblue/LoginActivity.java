@@ -1,6 +1,10 @@
 package io.aniruddh.deepblue;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Camera;
 import android.os.StrictMode;
+import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +12,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.afollestad.bridge.Bridge;
 import com.afollestad.bridge.BridgeException;
@@ -48,8 +53,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar.make(parent_view, "Sign Up", Snackbar.LENGTH_SHORT).show();
+                Intent calibCamera = new Intent(LoginActivity.this, CameraCalibration.class);
+                startActivity(calibCamera);
             }
         });
+
+
 
         loginButton = (Button) findViewById(R.id.login_button);
 
@@ -66,9 +75,20 @@ public class LoginActivity extends AppCompatActivity {
 
                 String login_endpoint = Constants.SERVER_API + "login";
 
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+
+
+                Float f_x = prefs.getFloat("f_x", 0.89115971f);
+                Float f_y = prefs.getFloat("f_y", 1.18821287f);
+
+                String f_x_str = String.valueOf(f_x);
+                String f_y_str = String.valueOf(f_y);
+
                 Form form = new Form()
-                        .add("email", username)
-                        .add("password", password);
+                        .add("username", username)
+                        .add("password", password)
+                        .add("f_x", f_x_str)
+                        .add("f_y", f_y_str);
                 try {
                     Request request = Bridge
                             .post(login_endpoint)

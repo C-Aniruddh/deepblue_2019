@@ -3,8 +3,10 @@ package io.aniruddh.deepblue;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Build;
+import android.preference.PreferenceManager;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -75,9 +77,18 @@ public class CameraCalibration extends AppCompatActivity {
                 lamp.select();
 
                 Camera camera = arFragment.getArSceneView().getArFrame().getCamera();
+
                 CameraIntrinsics ci = camera.getImageIntrinsics();
+                int[] dimens = ci.getImageDimensions();
                 float[] focals = ci.getFocalLength();
-                String foc = "Focals = {" + String.valueOf(focals[0]) + ", " + String.valueOf(focals[1]) + "}.";
+                //String foc = "Focals = {" + String.valueOf(focals[0]) + ", " + String.valueOf(focals[1]) + "}.";
+                String foc = "Dimens = {" + String.valueOf(dimens[0]) + ", " + String.valueOf(dimens[1]) + "}.";
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putFloat("f_x", focals[0]);
+                editor.putFloat("f_y", focals[1]);
+
+                editor.commit();
                 Toast.makeText(getApplicationContext(), foc, Toast.LENGTH_LONG).show();
             }
         });
