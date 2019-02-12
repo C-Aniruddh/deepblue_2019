@@ -18,6 +18,9 @@ from utils import label_map_util
 
 from utils import visualization_utils as vis_util
 
+from pyntcloud import PyntCloud
+
+
 examples_dir = os.path.dirname(__file__)
 weights_dir = os.path.join(examples_dir,'','weights')
 sys.path.insert(0, os.path.join(examples_dir, 'python'))
@@ -214,21 +217,37 @@ class Processor:
                 for index, value in enumerate(classes[0]):
                     object_dict = {}
 
-                    if scores[0, index] > 0.3:
+                    if scores[0, index] > 0.4:
                         object_dict[(category_index.get(value)).get('name')] = \
                                             scores[0, index]
                         objects.append(category_index.get(value).get('name'))
 
                 print(objects)
 
-                label = self.get_label(objects[0])
-                
-                plt.figure(figsize=IMAGE_SIZE)
-                plt.imshow(image_np)
-                plt.savefig(pothole_file)
+                if len(objects) > 0:
+
+                    label = self.get_label(objects[0])
+                    
+                    plt.figure(figsize=IMAGE_SIZE)
+                    plt.imshow(image_np)
+                    plt.savefig(pothole_file)
+
+                else:
+                    label = ''
 
         return pothole_file, label
 
+    def get_volume(self, point_cloud_file):
+        shape = PyntCloud.from_file(point_cloud_file)
+        convex_hull_id = shape.add_structure("convex_hull")
+        convex_hull = shape.structures[convex_hull_id]
+        shape.mesh = convex_hull.get_mesh()
+        shape.to_file("diamond_hull.ply", also_save=["mesh"])
+        volume = convex_hull.volume
+
+        volume = volume * 10
+
+        return volume
 
     def get_location_data(self, image_one_full):
         data = gpsphoto.getGPSData(image_one_full)
