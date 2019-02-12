@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
-INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
-INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
-INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
 MERGED from [com.android.support:multidex:1.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e5fe282119c8cb46fabfc9477239caea/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/MaterialStyledDialogs-2.1.aar/91b7217e4f411321e1777d245417873b/AndroidManifest.xml:2:1-11:12
 MERGED from [com.klinkerapps:sliding-activity:1.5.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/sliding-activity-1.5.2.aar/53c430823fe8c7ffbce01ff1828de3e1/AndroidManifest.xml:17:1-27:12
@@ -47,22 +47,22 @@ MERGED from [com.google.ar.sceneform:sceneform-base:1.6.0] /home/aniruddh/.gradl
 MERGED from [com.google.ar.sceneform:filament-android:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/filament-android-1.6.0.aar/84c4944dd0325e9b7e88060e98a297c0/AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.core:runtime:1.1.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/84e0b8f11c7a579b129603b2c66ae740/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.ar:core:1.6.0] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/27ef3079c3dd11001b24e58ab432bb83/AndroidManifest.xml:17:1-46:12
-INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
-INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
-INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
+INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
 	package
 		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:18:5-35
 		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
 		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
-		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
 		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:17:5-51
 	android:versionCode
 		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
-		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-88:12
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:1-89:12
 		INJECTED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:16:11-69
@@ -209,7 +209,7 @@ ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidM
 	android:name
 		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:36:19-60
 application
-ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:38:5-86:19
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:38:5-87:19
 MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/69d5d9869d935d6955bcd3f129a0cd36/AndroidManifest.xml:13:5-20
 MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/69d5d9869d935d6955bcd3f129a0cd36/AndroidManifest.xml:13:5-20
 MERGED from [org.tensorflow:tensorflow-lite:0.0.0-nightly] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-0.0.0-nightly.aar/037576ef5ab3b8b980fb82f6a37df2e8/AndroidManifest.xml:9:5-20
@@ -317,9 +317,13 @@ ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidM
 	android:name
 		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:84:19-45
 activity#io.aniruddh.deepblue.CameraCalibration
-ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:85:9-64
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:85:9-55
 	android:name
 		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:85:19-52
+activity#io.aniruddh.deepblue.LoginActivity
+ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:86:9-60
+	android:name
+		ADDED from /home/aniruddh/AndroidStudioProjects/standalone/app/src/main/AndroidManifest.xml:86:19-48
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/aniruddh/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/21412c84cade5c97dd2e3963947175c5/AndroidManifest.xml:23:5-79
 	android:name

@@ -82,7 +82,8 @@
             android:taskAffinity=""
             android:theme="@style/Theme.Sliding.Light" />
         <activity android:name=".ManualMode" />
-        <activity android:name=".CameraCalibration"></activity>
+        <activity android:name=".CameraCalibration" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

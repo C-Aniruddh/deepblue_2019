@@ -39,8 +39,8 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/spacing_xxlarge"
-        android:background="@android:color/black"
-        app:popupTheme="@style/ThemeOverlay.AppCompat"
+        android:background="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:tabIndicatorHeight="0dp"
         app:tabMode="fixed"
         app:theme="@style/Toolbar.Light" />

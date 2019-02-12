@@ -12,6 +12,6 @@ public final class R {
     }
     public static final class id {
         public static final int calligraphy_tag_id = 0x7f090033;
-        public static final int viewpump_tag_id = 0x7f09012d;
+        public static final int viewpump_tag_id = 0x7f090132;
     }
 }

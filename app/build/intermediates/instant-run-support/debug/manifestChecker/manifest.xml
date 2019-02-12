@@ -92,6 +92,7 @@
             android:theme="@style/Theme.Sliding.Light" />
         <activity android:name="io.aniruddh.deepblue.ManualMode" />
         <activity android:name="io.aniruddh.deepblue.CameraCalibration" />
+        <activity android:name="io.aniruddh.deepblue.LoginActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

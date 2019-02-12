@@ -1,4 +1,4 @@
-package io.aniruddh.deepblue.tensorflow;
+package io.aniruddh.deepblue;
 
 public class Constants {
     public static final String SERVER_API = "http://192.168.0.106:5000/mobile/";

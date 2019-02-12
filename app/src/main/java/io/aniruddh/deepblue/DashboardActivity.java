@@ -2,6 +2,7 @@ package io.aniruddh.deepblue;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
@@ -9,6 +10,7 @@ import android.hardware.camera2.CameraManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -56,6 +58,12 @@ public class DashboardActivity extends AppCompatActivity implements HomeFragment
 
         CameraManager manager =
                 (CameraManager)getSystemService(CAMERA_SERVICE);
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        if (!prefs.getBoolean("logged", false)) {
+            Intent startLogin = new Intent(DashboardActivity.this, LoginActivity.class);
+            startActivity(startLogin);
+        }
 
         try {
             for (String cameraId : manager.getCameraIdList()) {

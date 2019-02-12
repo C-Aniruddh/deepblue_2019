@@ -26,9 +26,8 @@ import com.google.gson.reflect.TypeToken;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.aniruddh.deepblue.IssueActivity;
 import io.aniruddh.deepblue.SingleIssueActivity;
-import io.aniruddh.deepblue.tensorflow.Constants;
+import io.aniruddh.deepblue.Constants;
 import io.aniruddh.deepblue.network.NetworkClass;
 import io.aniruddh.deepblue.R;
 import io.aniruddh.deepblue.models.Issue;

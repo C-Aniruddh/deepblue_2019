@@ -1,6 +1,5 @@
 package io.aniruddh.deepblue;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
@@ -23,10 +22,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
-
-import io.aniruddh.deepblue.R;
 import io.aniruddh.deepblue.models.Issue;
-import io.aniruddh.deepblue.tensorflow.Constants;
 import io.aniruddh.deepblue.utils.Tools;
 
 public class IssueActivity extends AppCompatActivity {

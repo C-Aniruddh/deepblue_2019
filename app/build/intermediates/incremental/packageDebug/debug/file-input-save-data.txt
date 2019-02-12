@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Feb 03 19:18:15 IST 2019
+#Sun Feb 03 19:22:29 IST 2019
 5.base=/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 22.path=mobilenet_ssd.tflite
 32.set=ASSET

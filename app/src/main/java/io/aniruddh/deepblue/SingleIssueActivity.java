@@ -1,9 +1,6 @@
 package io.aniruddh.deepblue;
 
 import android.content.Context;
-import android.content.Intent;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -22,7 +19,6 @@ import com.klinker.android.sliding.MultiShrinkScroller;
 import com.klinker.android.sliding.SlidingActivity;
 
 import io.aniruddh.deepblue.models.Issue;
-import io.aniruddh.deepblue.tensorflow.Constants;
 import io.aniruddh.deepblue.utils.Tools;
 import io.github.inflationx.calligraphy3.CalligraphyConfig;
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
