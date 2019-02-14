@@ -13,11 +13,14 @@ import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.afollestad.ason.Ason;
 import com.afollestad.bridge.Bridge;
 import com.afollestad.bridge.BridgeException;
 import com.afollestad.bridge.Form;
 import com.afollestad.bridge.Request;
+import com.afollestad.bridge.Response;
 
 import io.aniruddh.deepblue.R;
 import io.aniruddh.deepblue.utils.Tools;
@@ -94,9 +97,26 @@ public class LoginActivity extends AppCompatActivity {
                             .post(login_endpoint)
                             .body(form)
                             .request();
+
+                    Response response = request.response();
+                    Ason ason = new Ason(String.valueOf(response.asAsonObject()));
+
+                    String status = ason.get("login");
+                    if (status != null) {
+                        if (status.contentEquals("successful")){
+                            SharedPreferences.Editor editor = prefs.edit();
+                            editor.putBoolean("logged", true);
+                            editor.commit();
+                            finish();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_SHORT).show();
+                        }
+                    }
                 } catch (BridgeException e) {
                     e.printStackTrace();
                 }
+
+
 
             }
         });

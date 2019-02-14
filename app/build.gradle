@@ -83,6 +83,9 @@ dependencies {
         exclude group: 'org.json', module: 'json'
     }
 
+    implementation 'com.github.AppIntro:AppIntro:v4.2.3'
+
+    implementation 'com.airbnb.android:lottie:2.2.5'
 }
 
 

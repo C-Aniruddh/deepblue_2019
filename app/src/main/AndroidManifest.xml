@@ -83,7 +83,9 @@
             android:theme="@style/Theme.Sliding.Light" />
         <activity android:name=".ManualMode" />
         <activity android:name=".CameraCalibration" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".SubmitActivity"></activity>
     </application>
 
 </manifest>

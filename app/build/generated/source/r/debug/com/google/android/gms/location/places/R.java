@@ -8,49 +8,49 @@ package com.google.android.gms.location.places;
 
 public final class R {
     public static final class color {
-        public static final int place_autocomplete_prediction_primary_text = 0x7f06014f;
-        public static final int place_autocomplete_prediction_primary_text_highlight = 0x7f060150;
-        public static final int place_autocomplete_prediction_secondary_text = 0x7f060151;
-        public static final int place_autocomplete_search_hint = 0x7f060152;
-        public static final int place_autocomplete_search_text = 0x7f060153;
-        public static final int place_autocomplete_separator = 0x7f060154;
+        public static final int place_autocomplete_prediction_primary_text = 0x7f060151;
+        public static final int place_autocomplete_prediction_primary_text_highlight = 0x7f060152;
+        public static final int place_autocomplete_prediction_secondary_text = 0x7f060153;
+        public static final int place_autocomplete_search_hint = 0x7f060154;
+        public static final int place_autocomplete_search_text = 0x7f060155;
+        public static final int place_autocomplete_separator = 0x7f060156;
     }
     public static final class dimen {
-        public static final int place_autocomplete_button_padding = 0x7f0700d8;
-        public static final int place_autocomplete_powered_by_google_height = 0x7f0700d9;
-        public static final int place_autocomplete_powered_by_google_start = 0x7f0700da;
-        public static final int place_autocomplete_prediction_height = 0x7f0700db;
-        public static final int place_autocomplete_prediction_horizontal_margin = 0x7f0700dc;
-        public static final int place_autocomplete_prediction_primary_text = 0x7f0700dd;
-        public static final int place_autocomplete_prediction_secondary_text = 0x7f0700de;
-        public static final int place_autocomplete_progress_horizontal_margin = 0x7f0700df;
-        public static final int place_autocomplete_progress_size = 0x7f0700e0;
-        public static final int place_autocomplete_separator_start = 0x7f0700e1;
+        public static final int place_autocomplete_button_padding = 0x7f0700e1;
+        public static final int place_autocomplete_powered_by_google_height = 0x7f0700e2;
+        public static final int place_autocomplete_powered_by_google_start = 0x7f0700e3;
+        public static final int place_autocomplete_prediction_height = 0x7f0700e4;
+        public static final int place_autocomplete_prediction_horizontal_margin = 0x7f0700e5;
+        public static final int place_autocomplete_prediction_primary_text = 0x7f0700e6;
+        public static final int place_autocomplete_prediction_secondary_text = 0x7f0700e7;
+        public static final int place_autocomplete_progress_horizontal_margin = 0x7f0700e8;
+        public static final int place_autocomplete_progress_size = 0x7f0700e9;
+        public static final int place_autocomplete_separator_start = 0x7f0700ea;
     }
     public static final class drawable {
-        public static final int places_ic_clear = 0x7f0800b6;
-        public static final int places_ic_search = 0x7f0800b7;
-        public static final int powered_by_google_dark = 0x7f0800b8;
-        public static final int powered_by_google_light = 0x7f0800b9;
+        public static final int places_ic_clear = 0x7f080201;
+        public static final int places_ic_search = 0x7f080202;
+        public static final int powered_by_google_dark = 0x7f080203;
+        public static final int powered_by_google_light = 0x7f080204;
     }
     public static final class id {
-        public static final int place_autocomplete_clear_button = 0x7f0900cd;
-        public static final int place_autocomplete_powered_by_google = 0x7f0900ce;
-        public static final int place_autocomplete_prediction_primary_text = 0x7f0900cf;
-        public static final int place_autocomplete_prediction_secondary_text = 0x7f0900d0;
-        public static final int place_autocomplete_progress = 0x7f0900d1;
-        public static final int place_autocomplete_search_button = 0x7f0900d2;
-        public static final int place_autocomplete_search_input = 0x7f0900d3;
-        public static final int place_autocomplete_separator = 0x7f0900d4;
+        public static final int place_autocomplete_clear_button = 0x7f0900e6;
+        public static final int place_autocomplete_powered_by_google = 0x7f0900e7;
+        public static final int place_autocomplete_prediction_primary_text = 0x7f0900e8;
+        public static final int place_autocomplete_prediction_secondary_text = 0x7f0900e9;
+        public static final int place_autocomplete_progress = 0x7f0900ea;
+        public static final int place_autocomplete_search_button = 0x7f0900eb;
+        public static final int place_autocomplete_search_input = 0x7f0900ec;
+        public static final int place_autocomplete_separator = 0x7f0900ed;
     }
     public static final class layout {
-        public static final int place_autocomplete_fragment = 0x7f0b005d;
-        public static final int place_autocomplete_item_powered_by_google = 0x7f0b005e;
-        public static final int place_autocomplete_item_prediction = 0x7f0b005f;
-        public static final int place_autocomplete_progress = 0x7f0b0060;
+        public static final int place_autocomplete_fragment = 0x7f0b0068;
+        public static final int place_autocomplete_item_powered_by_google = 0x7f0b0069;
+        public static final int place_autocomplete_item_prediction = 0x7f0b006a;
+        public static final int place_autocomplete_progress = 0x7f0b006b;
     }
     public static final class string {
-        public static final int place_autocomplete_clear_button = 0x7f0e005d;
-        public static final int place_autocomplete_search_hint = 0x7f0e005e;
+        public static final int place_autocomplete_clear_button = 0x7f0e006b;
+        public static final int place_autocomplete_search_hint = 0x7f0e006c;
     }
 }

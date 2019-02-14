@@ -53,4 +53,5 @@
     </string>
     <string name="manual_desc">Suitable for reporting issues nearby, where-in you can physically access the location of damage without any risk.</string>
     <string name="description">Description</string>
+    <string name="next">NEXT</string>
 </resources>

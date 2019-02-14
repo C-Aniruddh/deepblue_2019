@@ -4,6 +4,23 @@
             "outputFile": "/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
+                    "source": "/home/aniruddh/.gradle/caches/transforms-1/files-1.1/AppIntro-v4.2.3.aar/afd12db23725ba551e7501da5fcfdc7f/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,58",
+                        "endOffsets": "108,167"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "97,155",
+                        "endColumns": "57,58",
+                        "endOffsets": "150,209"
+                    }
+                },
+                {
                     "source": "/home/aniruddh/.gradle/caches/transforms-1/files-1.1/sliding-activity-1.5.2.aar/53c430823fe8c7ffbce01ff1828de3e1/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
@@ -13,11 +30,11 @@
                         "endOffsets": "108,166,230,290,350,411"
                     },
                     "to": {
-                        "startLines": "3,4,5,6,7,8",
+                        "startLines": "5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "97,155,213,277,337,397",
+                        "startOffsets": "214,272,330,394,454,514",
                         "endColumns": "57,57,63,59,59,60",
-                        "endOffsets": "150,208,272,332,392,453"
+                        "endOffsets": "267,325,389,449,509,570"
                     }
                 },
                 {

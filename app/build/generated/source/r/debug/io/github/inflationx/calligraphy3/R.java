@@ -11,7 +11,7 @@ public final class R {
         public static final int fontPath = 0x7f0400b2;
     }
     public static final class id {
-        public static final int calligraphy_tag_id = 0x7f090033;
-        public static final int viewpump_tag_id = 0x7f090132;
+        public static final int calligraphy_tag_id = 0x7f090038;
+        public static final int viewpump_tag_id = 0x7f090156;
     }
 }

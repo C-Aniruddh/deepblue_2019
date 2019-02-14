@@ -118,7 +118,7 @@ public class MapActivity extends AppCompatActivity {
                                     .setStyle(Style.HEADER_WITH_TITLE)
                                     .setPositiveText("START")
                                     .onPositive((dialog1, which1) -> {
-                                        Intent startAutonomous = new Intent(MapActivity.this, DetectorActivity.class);
+                                        Intent startAutonomous = new Intent(MapActivity.this, SubmitActivity.class);
                                         startActivity(startAutonomous);
                                     })
                                     .setNeutralText("Learn More")

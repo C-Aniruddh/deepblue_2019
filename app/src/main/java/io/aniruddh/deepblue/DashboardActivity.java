@@ -21,8 +21,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.google.ar.core.CameraIntrinsics;
-
 import io.aniruddh.deepblue.fragments.HomeFragment;
 import io.aniruddh.deepblue.fragments.IssueFragment;
 import io.aniruddh.deepblue.fragments.ProfileFragment;
@@ -60,7 +58,11 @@ public class DashboardActivity extends AppCompatActivity implements HomeFragment
                 (CameraManager)getSystemService(CAMERA_SERVICE);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        if (!prefs.getBoolean("logged", false)) {
+
+        if (prefs.getBoolean("first_time", true)) {
+            Intent startLogin = new Intent(DashboardActivity.this, IntroActivity.class);
+            startActivity(startLogin);
+        } else if (!prefs.getBoolean("logged", false)) {
             Intent startLogin = new Intent(DashboardActivity.this, LoginActivity.class);
             startActivity(startLogin);
         }
