@@ -168,7 +168,7 @@ public class Tools {
 
     public static GoogleMap configActivityMaps(GoogleMap googleMap) {
         // set map type
-        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
         // Enable / Disable zooming controls
         googleMap.getUiSettings().setZoomControlsEnabled(false);
 
@@ -181,6 +181,7 @@ public class Tools {
 
         googleMap.getUiSettings().setScrollGesturesEnabled(true);
         googleMap.getUiSettings().setMapToolbarEnabled(true);
+
 
         return googleMap;
     }

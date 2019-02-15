@@ -89,7 +89,7 @@ public class CameraCalibration extends AppCompatActivity {
                 editor.putFloat("f_y", focals[1]);
 
                 editor.commit();
-                Toast.makeText(getApplicationContext(), foc, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Camera Calibrated! ;)", Toast.LENGTH_LONG).show();
             }
         });
 

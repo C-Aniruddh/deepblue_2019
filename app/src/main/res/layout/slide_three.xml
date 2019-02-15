@@ -14,7 +14,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Cloud Based"
+        android:text="Better routes"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         tools:ignore="MissingPrefix" />
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        app:lottie_fileName="animations/cloud_sync.json" />
+        app:lottie_fileName="animations/location.json" />
 
     <TextView
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Keep your data synced!"
+        android:text="Use the pothole map by us and navigate through faster and safer roads!"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         tools:ignore="MissingPrefix" />

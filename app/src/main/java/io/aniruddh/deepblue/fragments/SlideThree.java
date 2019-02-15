@@ -45,7 +45,7 @@ public class SlideThree extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.slide_three, container, false);
         LottieAnimationView animationView = (LottieAnimationView) view.findViewById(R.id.slideThreeAnimation);
-        animationView.setAnimation("animations/cloud_sync.json");
+        animationView.setAnimation("animations/location.json");
         animationView.loop(true);
         animationView.playAnimation();
         return view;

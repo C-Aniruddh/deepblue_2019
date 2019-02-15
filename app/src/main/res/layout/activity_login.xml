@@ -21,9 +21,9 @@
                 android:layout_height="@dimen/spacing_middle" />
 
             <ImageView
-                android:layout_width="80dp"
+                android:layout_width="200dp"
                 android:layout_height="80dp"
-                android:src="@drawable/ic_launcher"
+                android:src="@drawable/blue"
                 android:tint="@color/blue_grey_800" />
 
             <View
@@ -127,7 +127,7 @@
                 android:layout_height="55dp"
                 android:layout_marginLeft="-4dp"
                 android:layout_marginRight="-4dp"
-                android:background="@drawable/btn_purple_a400"
+                android:background="@color/blue_grey_800"
                 android:text="Login"
                 android:id="@+id/login_button"
                 android:textAllCaps="false"
@@ -159,7 +159,7 @@
                     android:clickable="true"
                     android:text="Sign Up"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/purple_A400"
+                    android:textColor="@color/blue_grey_800"
                     android:textStyle="bold" />
 
             </LinearLayout>

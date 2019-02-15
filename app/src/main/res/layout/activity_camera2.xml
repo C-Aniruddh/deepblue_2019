@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CameraActivity"
+
+    android:background="@android:color/black"
+    android:weightSum="1">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:keepScreenOn="true"
+        android:layout_width="match_parent"
+        app:cameraJpegQuality="100"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/cameraAnim"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:lottie_fileName="animations/left.json" />
+
+
+    </com.otaliastudios.cameraview.CameraView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/take_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/spacing_smlarge"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/blue_grey_600"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_photo_camera" />
+
+</LinearLayout>

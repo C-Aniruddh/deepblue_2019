@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1550030523020"
+    timestamp="1550241078014"
     token="8388395319086937622"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,16 +29,58 @@
 
     <build
         build-mode="FULL"
-        timestamp="1550030430314"
+        timestamp="1550237142607"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
             location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
             location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1550240817295"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
             location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -61,16 +103,10 @@
         <artifact
             location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
-        <artifact
-            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
-            location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1550030523020"
+        timestamp="1550241078014"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/aniruddh/AndroidStudioProjects/standalone/app/build/outputs/apk/debug/app-debug.apk"

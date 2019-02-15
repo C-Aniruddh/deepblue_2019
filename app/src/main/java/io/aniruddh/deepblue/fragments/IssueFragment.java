@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -14,6 +15,7 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,8 +28,10 @@ import com.google.gson.reflect.TypeToken;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.aniruddh.deepblue.ManualHelp;
 import io.aniruddh.deepblue.SingleIssueActivity;
 import io.aniruddh.deepblue.Constants;
+import io.aniruddh.deepblue.SubmitActivity;
 import io.aniruddh.deepblue.network.NetworkClass;
 import io.aniruddh.deepblue.R;
 import io.aniruddh.deepblue.models.Issue;
@@ -49,6 +53,8 @@ public class IssueFragment extends Fragment {
     private RecyclerView recyclerView;
     private List<Issue> issueList;
     private StoreAdapter mAdapter;
+
+    private FloatingActionButton new_issue;
 
     public IssueFragment() {
         // Required empty public constructor
@@ -96,6 +102,15 @@ public class IssueFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
         recyclerView.setNestedScrollingEnabled(false);
+
+        new_issue = (FloatingActionButton) view.findViewById(R.id.new_issue);
+        new_issue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent submitIssue = new Intent(getActivity(), ManualHelp.class);
+                startActivity(submitIssue);
+            }
+        });
 
         fetchStoreItems();
 

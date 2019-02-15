@@ -32,6 +32,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-feature android:name="android.hardware.camera.ar" />
 
@@ -85,7 +87,13 @@
         <activity android:name=".CameraCalibration" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".IntroActivity" />
-        <activity android:name=".SubmitActivity"></activity>
+        <activity android:name=".SubmitActivity" />
+        <activity
+            android:name=".CameraActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".ManualHelp"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

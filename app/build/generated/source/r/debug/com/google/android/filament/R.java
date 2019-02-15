@@ -8,6 +8,6 @@ package com.google.android.filament;
 
 public final class R {
     public static final class string {
-        public static final int lib_name = 0x7f0e004e;
+        public static final int lib_name = 0x7f0e0050;
     }
 }

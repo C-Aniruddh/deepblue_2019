@@ -1,8 +1,8 @@
 package io.aniruddh.deepblue;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Camera;
 import android.os.StrictMode;
 import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.afollestad.ason.Ason;
@@ -22,8 +21,11 @@ import com.afollestad.bridge.Form;
 import com.afollestad.bridge.Request;
 import com.afollestad.bridge.Response;
 
-import io.aniruddh.deepblue.R;
 import io.aniruddh.deepblue.utils.Tools;
+import io.github.inflationx.calligraphy3.CalligraphyConfig;
+import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
+import io.github.inflationx.viewpump.ViewPump;
+import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -60,6 +62,14 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(calibCamera);
             }
         });
+
+        ViewPump.init(ViewPump.builder()
+                .addInterceptor(new CalligraphyInterceptor(
+                        new CalligraphyConfig.Builder()
+                                .setDefaultFontPath("fonts/circular-book.ttf")
+                                .setFontAttrId(R.attr.fontPath)
+                                .build()))
+                .build());
 
 
 
@@ -106,6 +116,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (status.contentEquals("successful")){
                             SharedPreferences.Editor editor = prefs.edit();
                             editor.putBoolean("logged", true);
+                            editor.putString("username", username);
                             editor.commit();
                             finish();
                         } else {
@@ -120,5 +131,10 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
 }

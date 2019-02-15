@@ -44,18 +44,10 @@ public class SlideFive extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.slide_five, container, false);
         LottieAnimationView animationView = (LottieAnimationView) view.findViewById(R.id.slideFiveAnimation);
-        animationView.setAnimation("animations/drink.json");
+        animationView.setAnimation("animations/smile.json");
         animationView.loop(true);
         animationView.playAnimation();
 
-        Button calib = (Button) view.findViewById(R.id.app_intro_camera);
-        calib.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent startCalib = new Intent(getActivity(), CameraCalibration.class);
-                startActivity(startCalib);
-            }
-        });
         return view;
     }
 

@@ -1,12 +1,23 @@
 package io.aniruddh.deepblue.fragments;
 
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.StrictMode;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.afollestad.ason.Ason;
+import com.afollestad.bridge.Bridge;
+import com.afollestad.bridge.BridgeException;
+import com.afollestad.bridge.Request;
+import com.afollestad.bridge.Response;
+
+import io.aniruddh.deepblue.Constants;
 import io.aniruddh.deepblue.R;
 
 
@@ -24,6 +35,12 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private TextView fullName;
+    private TextView emailID;
+    private TextView usernameView;
+    private TextView issues;
+    private TextView references;
 
 
     public ProfileFragment() {
@@ -61,7 +78,47 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        fullName = (TextView) view.findViewById(R.id.full_name);
+        emailID = (TextView) view.findViewById(R.id.emailView);
+        usernameView = (TextView) view.findViewById(R.id.usernameView);
+
+        issues = (TextView) view.findViewById(R.id.userIssues);
+        references = (TextView) view.findViewById(R.id.userReferences);
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
+        String username = prefs.getString("username", "aniruddh");
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
+
+        String api_endpoint = Constants.SERVER_API + "profile/" + username;
+        try {
+            Request request = Bridge
+                    .get(api_endpoint)
+                    .request();
+            Response response = request.response();
+            Ason data = response.asAsonObject();
+
+            String user_email = data.getString("email");
+            String user_issues = data.getString("issues");
+            String user_references = data.getString("references");
+            String user_fullname = data.getString("fullname");
+            usernameView.setText(username);
+            emailID.setText(user_email);
+            issues.setText(user_issues);
+            references.setText(user_references);
+            fullName.setText(user_fullname);
+
+
+        } catch (BridgeException e) {
+            e.printStackTrace();
+        }
+
+        return view;
     }
 
 }

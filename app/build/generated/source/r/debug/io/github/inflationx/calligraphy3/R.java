@@ -8,10 +8,10 @@ package io.github.inflationx.calligraphy3;
 
 public final class R {
     public static final class attr {
-        public static final int fontPath = 0x7f0400b2;
+        public static final int fontPath = 0x7f0400d6;
     }
     public static final class id {
-        public static final int calligraphy_tag_id = 0x7f090038;
-        public static final int viewpump_tag_id = 0x7f090156;
+        public static final int calligraphy_tag_id = 0x7f09003b;
+        public static final int viewpump_tag_id = 0x7f090171;
     }
 }

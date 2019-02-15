@@ -89,6 +89,20 @@
             android:padding="8dp"
             android:scrollbars="vertical" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/new_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/spacing_smlarge"
+            android:clickable="true"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/blue_grey_600"
+            app:fabSize="normal"
+            app:rippleColor="@android:color/white"
+            app:srcCompat="@drawable/ic_add" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

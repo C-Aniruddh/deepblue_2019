@@ -8,7 +8,7 @@ package com.google.ar.sceneform;
 
 public final class R {
     public static final class drawable {
-        public static final int sceneform_plane = 0x7f08020b;
+        public static final int sceneform_plane = 0x7f08020e;
     }
     public static final class id {
         public static final int __arcore_cancelButton = 0x7f090006;
@@ -36,6 +36,6 @@ public final class R {
         public static final int __arcore_install_app = 0x7f0e0002;
         public static final int __arcore_install_feature = 0x7f0e0003;
         public static final int __arcore_installing = 0x7f0e0004;
-        public static final int lib_name = 0x7f0e004e;
+        public static final int lib_name = 0x7f0e0050;
     }
 }

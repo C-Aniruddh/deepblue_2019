@@ -1,6 +1,7 @@
 package io.aniruddh.deepblue;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -16,6 +17,10 @@ import io.aniruddh.deepblue.fragments.SlideFour;
 import io.aniruddh.deepblue.fragments.SlideOne;
 import io.aniruddh.deepblue.fragments.SlideThree;
 import io.aniruddh.deepblue.fragments.SlideTwo;
+import io.github.inflationx.calligraphy3.CalligraphyConfig;
+import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
+import io.github.inflationx.viewpump.ViewPump;
+import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 public class IntroActivity extends AppIntro {
 
@@ -28,6 +33,14 @@ public class IntroActivity extends AppIntro {
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_IMMERSIVE);
+
+        ViewPump.init(ViewPump.builder()
+                .addInterceptor(new CalligraphyInterceptor(
+                        new CalligraphyConfig.Builder()
+                                .setDefaultFontPath("fonts/circular-book.ttf")
+                                .setFontAttrId(R.attr.fontPath)
+                                .build()))
+                .build());
 
         addSlide(SlideOne.newInstance(R.layout.slide_one));
         addSlide(SlideTwo.newInstance(R.layout.slide_two));
@@ -60,6 +73,11 @@ public class IntroActivity extends AppIntro {
         Intent login = new Intent(IntroActivity.this, LoginActivity.class);
         startActivity(login);
         finish();
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
 
 }

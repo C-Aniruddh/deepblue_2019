@@ -3,13 +3,15 @@ package io.aniruddh.deepblue;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
 
+import com.afollestad.bridge.Bridge;
+import com.afollestad.bridge.BridgeException;
+import com.afollestad.bridge.Response;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
@@ -17,14 +19,15 @@ import com.github.javiersantos.materialstyleddialogs.enums.Style;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import io.aniruddh.deepblue.R;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import io.aniruddh.deepblue.utils.Tools;
 import io.github.inflationx.calligraphy3.CalligraphyConfig;
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
@@ -34,6 +37,7 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 public class MapActivity extends AppCompatActivity {
 
     private GoogleMap mMap;
+    private JSONArray responseJsonArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +51,26 @@ public class MapActivity extends AppCompatActivity {
                                 .build()))
                 .build());
 
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
+        responseJsonArray = null;
+        try {
+
+            Response response = Bridge
+                    .get(Constants.SERVER_API + "all_issues")
+                    .response();
+
+            String res = response.toString();
+
+            responseJsonArray = response.asJsonArray();
+            // Toast.makeText(getApplicationContext(), String.valueOf(res), Toast.LENGTH_SHORT).show();
+
+        } catch (BridgeException e) {
+            e.printStackTrace();
+        }
+
+
         initMapFragment();
         Tools.setSystemBarColor(this, R.color.blue_grey_600);
     }
@@ -55,8 +79,25 @@ public class MapActivity extends AppCompatActivity {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(googleMap -> {
             mMap = Tools.configActivityMaps(googleMap);
-            MarkerOptions markerOptions = new MarkerOptions().position(new LatLng(19.067909, 72.866284)).icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_launcher));
-            mMap.addMarker(markerOptions);
+
+            if (responseJsonArray != null) {
+                for (int i = 0; i < responseJsonArray.length(); i++) {
+                    try {
+                        JSONObject damage = responseJsonArray.getJSONObject(i);
+                        Float lat = Float.valueOf(damage.getString("lat"));
+                        Float lon = Float.valueOf(damage.getString("lon"));
+                        MarkerOptions markerOptions = new MarkerOptions().position(new LatLng(lat, lon)).icon(BitmapDescriptorFactory.fromResource(R.drawable.loc));
+                        mMap.addMarker(markerOptions);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+            }
+            // MarkerOptions markerOptions = new MarkerOptions().position(new LatLng(19.067909, 72.866284)).icon(BitmapDescriptorFactory.fromResource(R.drawable.loc));
+            // mMap.addMarker(markerOptions);
+
             mMap.moveCamera(zoomingLocation());
             mMap.setOnMarkerClickListener(marker -> {
                 try {
@@ -77,10 +118,10 @@ public class MapActivity extends AppCompatActivity {
         int id = view.getId();
         switch (id) {
             case R.id.map_button:
-                Toast.makeText(getApplicationContext(), "Map Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.list_button:
-                Toast.makeText(getApplicationContext(), "List Clicked", Toast.LENGTH_SHORT).show();
+                Intent cam = new Intent(MapActivity.this, DashboardActivity.class);
+                startActivity(cam);
                 break;
             case R.id.add_button:
                 new MaterialStyledDialog.Builder(this)
@@ -111,28 +152,11 @@ public class MapActivity extends AppCompatActivity {
                         })
                         .setNeutralText("Manual Mode")
                         .onNeutral((dialog, which) -> {
-                            new MaterialStyledDialog.Builder(this)
-                                    .setTitle("Manual Mode")
-                                    .setDescription(R.string.autonomous_desc)
-                                    .setCancelable(true)
-                                    .setStyle(Style.HEADER_WITH_TITLE)
-                                    .setPositiveText("START")
-                                    .onPositive((dialog1, which1) -> {
-                                        Intent startAutonomous = new Intent(MapActivity.this, SubmitActivity.class);
-                                        startActivity(startAutonomous);
-                                    })
-                                    .setNeutralText("Learn More")
-                                    .onNeutral(new MaterialDialog.SingleButtonCallback() {
-                                        @Override
-                                        public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
-                                            Toast.makeText(getApplicationContext(), "Learn More clicked", Toast.LENGTH_SHORT).show();
-                                        }
-                                    })
-                                    .show();
+                            Intent startHelp = new Intent(MapActivity.this, ManualHelp.class);
+                            startActivity(startHelp);
                         })
                         .setScrollable(true, 10)
                         .show();
-                Toast.makeText(getApplicationContext(), "Add Clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

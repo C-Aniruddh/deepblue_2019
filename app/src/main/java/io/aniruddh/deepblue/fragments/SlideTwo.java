@@ -45,7 +45,7 @@ public class SlideTwo extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.slide_two, container, false);
         LottieAnimationView animationView = (LottieAnimationView) view.findViewById(R.id.slideTwoAnimation);
-        animationView.setAnimation("animations/speedometer.json");
+        animationView.setAnimation("animations/camera.json");
         animationView.loop(true);
         animationView.playAnimation();
         return view;

@@ -47,7 +47,7 @@ public class SlideOne extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.slide_one, container, false);
         LottieAnimationView animationView = (LottieAnimationView) view.findViewById(R.id.slideOneAnimation);
-        animationView.setAnimation("animations/checked_loading.json");
+        animationView.setAnimation("animations/home.json");
         animationView.loop(true);
         animationView.playAnimation();
         return view;

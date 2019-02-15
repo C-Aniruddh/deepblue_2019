@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
-import android.hardware.camera2.CameraAccessException;
-import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 import android.net.Uri;
 import android.os.Build;
@@ -59,32 +57,13 @@ public class DashboardActivity extends AppCompatActivity implements HomeFragment
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
-        if (prefs.getBoolean("first_time", true)) {
+        if (!prefs.getBoolean("first_time", true)) {
             Intent startLogin = new Intent(DashboardActivity.this, IntroActivity.class);
             startActivity(startLogin);
         } else if (!prefs.getBoolean("logged", false)) {
             Intent startLogin = new Intent(DashboardActivity.this, LoginActivity.class);
             startActivity(startLogin);
         }
-
-        try {
-            for (String cameraId : manager.getCameraIdList()) {
-                CameraCharacteristics chars
-                        = manager.getCameraCharacteristics(cameraId);
-                // Do something with the characteristics
-                float[] parameters = new float[5];
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    parameters = chars.get(CameraCharacteristics.LENS_INFO_AVAILABLE_FOCAL_LENGTHS);
-                    for (int i = 0; i < 1; i++){
-                        Toast.makeText(getApplicationContext(), String.valueOf(parameters[i]), Toast.LENGTH_SHORT).show();
-                    }
-
-                }
-            }
-        }  catch(CameraAccessException e){
-                e.printStackTrace();
-        }
-
 
 
     }
@@ -132,24 +111,18 @@ public class DashboardActivity extends AppCompatActivity implements HomeFragment
             case 0:
                 fragment = new HomeFragment();
                 loadFragment(fragment);
-                Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
                 break;
             case 1:
-                Toast.makeText(getApplicationContext(), "Maps", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(DashboardActivity.this, MapActivity.class);
                 startActivity(i);
                 break;
             case 2:
                 fragment = new IssueFragment();
                 loadFragment(fragment);
-                Toast.makeText(getApplicationContext(), "Issues", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
                 fragment = new ProfileFragment();
-                // loadFragment(fragment);
-                // Toast.makeText(getApplicationContext(), "Profile", Toast.LENGTH_SHORT).show();
-                Intent startCalib = new Intent(DashboardActivity.this, CameraCalibration.class);
-                startActivity(startCalib);
+                loadFragment(fragment);
                 break;
         }
     }
@@ -190,4 +163,6 @@ public class DashboardActivity extends AppCompatActivity implements HomeFragment
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
+
+
 }
