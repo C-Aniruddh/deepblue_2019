@@ -60,6 +60,7 @@ def create_issue():
         documents = mongo.db.documents
         progress = mongo.db.progress
         references = mongo.db.references
+        users = mongo.db.users
 
         if request.method == 'POST':
             image_one = request.files['image_one']
@@ -87,8 +88,10 @@ def create_issue():
                 timestamp = str(datetime.datetime.now().strftime('%H:%M:%S'))
                 stamp = '%s-%s' % (date, timestamp)
 
+                find_user = users.find_one({'name' : session['username']})
+
                 proc = Processor()
-                points, cam1, cam2 = proc.process_files(full_path_one, full_path_two, issue_id)
+                points, cam1, cam2 = proc.process_files(full_path_one, full_path_two, issue_id, find_user)
 
                 lat, lon = proc.get_location_data(full_path_one)
 
@@ -490,14 +493,136 @@ def mobile_issues():
     return dumps(all_issues)
 
 
-@app.route('/mobile/login', methods=['POST', 'GET'])
+@app.route('/mobile/login', methods=['POST'])
 def mobile_login():
+    users = mongo.db.users
+    login_user = users.find_one({'name': request.form['username']})
+    f_x = float(request.form.get('f_x'))
+    f_y = float(request.form.get('f_y'))
+
+    print(login_user['name'])
+    print(f_x)
+    print(f_y)
+
+    if login_user:
+        if bcrypt.hashpw(request.form.get('password').encode('utf-8'), login_user['password']) == login_user['password']:
+            # session['username'] = request.form['username']
+            users.update_one({'name' : login_user['name']}, {"$set" : {'f_x' : f_x}})
+            users.update_one({'name' : login_user['name']}, {"$set" : {'f_y' : f_y}})
+            return json.dumps({'login' : 'successful'})
+
+    return json.dumps({'login' : 'unsuccessful'})
+
+
+@app.route('/mobile/all_issues')
+def get_all_locations():
+    issues = mongo.db.issues
+    find_all_issues = issues.find({})
+    lat_long_list = []
+
+    for issue in find_all_issues:
+        lat_long_list.append({'lat' : str(issue['lat']), 'lon' : str(issue['lon'])})
+
+    return json.dumps(lat_long_list)
+
+
+@app.route('/mobile/issues/create', methods=['POST', 'GET'])
+def create_issue_mobile():
+
+    issues = mongo.db.issues
+    documents = mongo.db.documents
+    progress = mongo.db.progress
+    references = mongo.db.references
+    users = mongo.db.users
+
     if request.method == 'POST':
-        username = request.form.get('email')
-        password = request.form.get('password')
-        print(username)
-        print(password)
-        return json.dumps({'login' : 'success'})
+        image_one = request.files['image_one']
+        image_two = request.files['image_two']
+        if (image_one and allowed_file(image_two.filename) and (image_two and allowed_file(image_two.filename))):
+            image_one_filename = secure_filename(image_one.filename)
+            image_two_filename = secure_filename(image_two.filename)
+                
+            image_one.save(os.path.join(app.config['UPLOAD_FOLDER'], image_one_filename))
+            image_two.save(os.path.join(app.config['UPLOAD_FOLDER'], image_two_filename))
+
+            full_path_one = os.path.join(app.config['UPLOAD_FOLDER'], image_one_filename)
+            full_path_two = os.path.join(app.config['UPLOAD_FOLDER'], image_two_filename)
+
+            category = request.form.get('project_category')
+            description = request.form.get('description')
+
+
+            current_issues = issues.find()
+            total_issue_count = current_issues.count()
+
+            issue_id = str(total_issue_count + 1)
+
+            date = str(datetime.date.today())
+            timestamp = str(datetime.datetime.now().strftime('%H:%M:%S'))
+            stamp = '%s-%s' % (date, timestamp)
+
+            find_user = users.find_one({'name' : request.form.get('username')})
+
+            proc = Processor()
+            points, cam1, cam2 = proc.process_files(full_path_one, full_path_two, issue_id, find_user)
+
+            lat, lon = proc.get_location_data(full_path_one)
+
+            det, label = proc.get_damage_type(full_path_one, issue_id)
+
+            geolocator = Nominatim(timeout=10)
+            loc_string = "%s %s" % (lat, lon)
+            print(loc_string)
+            location = geolocator.reverse(loc_string)
+                
+            locality = location.address
+            add_s = locality.split(',')
+            title_address = ' '.join(add_s[0:3])
+
+            title = "%s at %s" % (label, title_address)
+
+            points_curr = os.path.join(APP_ROOT, points)
+            points_dest = os.path.join(app.config['PROCESSED_FOLDER'], points)
+
+            volume = proc.get_volume(points_dest)
+
+            cam1_curr = os.path.join(APP_ROOT, cam1)
+            cam1_dest = os.path.join(app.config['PROCESSED_FOLDER'], cam1)
+
+            cam2_curr = os.path.join(APP_ROOT, cam2)
+            cam2_dest = os.path.join(app.config['PROCESSED_FOLDER'], cam2)
+
+            det_curr = os.path.join(APP_ROOT, det)
+            det_dest = os.path.join(app.config['UPLOAD_FOLDER'], det)
+
+            # Move files to proper directories
+
+            shutil.move(points_curr, points_dest)
+            shutil.move(cam1_curr, cam1_dest)
+            shutil.move(cam2_curr, cam2_dest)
+            shutil.move(det_curr, det_dest)
+
+            issues.insert({'issue_id': issue_id, 'category' : category, 'points' : points_dest, 'cam1' : cam1_dest, 
+                'cam2' : cam2_dest, 'locality': locality, 'image_one_full' : full_path_one, 'image_two_full' : full_path_two, 
+                'description' : description, 'uploaded_by': request.form.get('username'), 'time' : stamp, 'detection' : det_dest, 'lat' : lat, 'lon' : lon,
+                'label' : label, 'title' : title, 'status' : 'Not Fixed', 'volume' : volume})
+
+                
+            progress.insert({'issue_id' : issue_id, 'type' : 'created', 'time' : timestamp, 'date' : date, 'upload' : request.form.get('username')})
+
+            iso_date = datetime.datetime.now().isoformat()
+            references.insert({'date' : iso_date, 'issue_id' : issue_id, 'referenced_by' : request.form.get('username')})
+
+            current_issue = issues.find_one({'issue_id' : issue_id})
+            document_processor = DocumentManager()
+            doc_uri = document_processor.generateDocTable(current_issue)
+            documents.insert({'issue_id' : issue_id, 'doc_uri' : doc_uri})
+
+            calculate_rank()
+                
+            return json.dumps({'issue' : 'Created Successfully'})
+
+        return render_template('pages/app/create.html')
 
 # User management
 # Login and register 
@@ -521,7 +646,7 @@ def register():
 
         return 'A user with that Email id/username already exists'
 
-    return render_template('pages/examples/register.html')
+    return render_template('pages/app/register.html')
 
 @app.route('/login', methods=['POST'])
 def login():

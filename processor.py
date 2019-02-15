@@ -78,7 +78,7 @@ class Processor:
     #  The parameters are normalized such that the image height and width is 1.
     #
 
-    def process_files(self, image_one_path, image_two_path, stamp):
+    def process_files(self, image_one_path, image_two_path, stamp, user):
         # read data
         if tf.test.is_gpu_available(True):
             data_format='channels_first'
@@ -87,6 +87,22 @@ class Processor:
 
         img1 = Image.open(image_one_path)
         img2 = Image.open(image_two_path)
+
+        f_x = float(user['f_x'])
+        f_y = float(user['f_y'])
+
+        normalized_f_x = f_x / img1.size[0]
+        normalised_f_y = f_y / img1.size[1]
+
+        w1 = ((0.89115971)*(256))/normalized_f_x
+        h1 = ((1.18821287)*(192))/normalised_f_y
+
+        w1 = int(w1)
+        h1 = int(h1)
+
+        img1 = img1.resize((w1, h1))
+        img2 = img2.resize((w1, h1))
+
         pothole_prefix = "pothole_%s_" % stamp
         pothole_points = pothole_prefix + 'points.ply'
         pothole_cam1 = pothole_prefix  + 'cam1.ply'
@@ -124,6 +140,9 @@ class Processor:
         rotation = result['predict_rotation']
         translation = result['predict_translation']
         result = refine_net.eval(input_data['image1'],result['predict_depth2'])
+
+        bilinear_distance = 10
+        physical_depth = bilinear_distance*result['predict_depth0']
 
 
         plt.imshow(result['predict_depth0'].squeeze(), cmap='Greys')
@@ -223,7 +242,10 @@ class Processor:
                         objects.append(category_index.get(value).get('name'))
 
                 print(objects)
-
+                
+                if len(objects) == 0:
+                    objects.append('D20')
+                
                 if len(objects) > 0:
 
                     label = self.get_label(objects[0])

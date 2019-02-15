@@ -62,10 +62,20 @@ else: # running on cpu requires channels_last data format
 #
 
 # read data
-img1 = Image.open(os.path.join(examples_dir,'p1.jpg'))
-img2 = Image.open(os.path.join(examples_dir,'p2.jpg'))
+img1 = Image.open(os.path.join(examples_dir,'sc.jpg'))
+img2 = Image.open(os.path.join(examples_dir,'sc1.jpg'))
+
+w1 = ((0.89115971)*(256))/0.1483929
+h1 = ((1.18821287)*(192))/0.111409796
+
+w1 = int(w1)
+h1 = int(h1)
+
+img1 = img1.resize((w1, h1))
+img2 = img2.resize((w1, h1))
 
 input_data = prepare_input_data(img1,img2,data_format)
+pothole_prefix = "pothole__"
 
 gpu_options = tf.GPUOptions()
 gpu_options.per_process_gpu_memory_fraction=0.8
@@ -98,18 +108,33 @@ rotation = result['predict_rotation']
 translation = result['predict_translation']
 result = refine_net.eval(input_data['image1'],result['predict_depth2'])
 
+print(translation)
 
 plt.imshow(result['predict_depth0'].squeeze(), cmap='Greys')
 plt.show()
 
+
+bilinear_distance = 10
+physical_depth = bilinear_distance*result['predict_depth0']
+
 # try to visualize the point cloud
 try:
-    from depthmotionnet.vis import *
+    from depthmotionnet.vis import  visualize_prediction, export_prediction_to_ply
     visualize_prediction(
         inverse_depth=result['predict_depth0'], 
         image=input_data['image_pair'][0,0:3] if data_format=='channels_first' else input_data['image_pair'].transpose([0,3,1,2])[0,0:3], 
         rotation=rotation, 
         translation=translation)
+
+    export_prediction_to_ply(
+        output_prefix=pothole_prefix,
+        inverse_depth=physical_depth,
+        image=input_data['image_pair'][0,0:3] if data_format=='channels_first' else input_data['image_pair'].transpose([0,3,1,2])[0,0:3],
+        #intrinsics=np.array([0.1483929, 0.111409796, 0.5, 0.5]),
+        rotation=rotation,
+        translation=translation)     
+
+
 except ImportError as err:
     print("Cannot visualize as pointcloud.", err)
 
