@@ -8,6 +8,8 @@ import timeago
 from geopy.geocoders import Nominatim
 from bson.json_util import dumps
 
+import math
+
 from processor import Processor
 from doc_processor import DocumentManager
 
@@ -146,10 +148,19 @@ def create_issue():
                 shutil.move(cam2_curr, cam2_dest)
                 shutil.move(det_curr, det_dest)
 
+                cost_details = get_quantities_material(volume / 1000)
+
+                cost_cement = cost_details['cement']['cost']
+                cost_sand = cost_details['sand']['cost']
+                cost_aggregate = cost_details['aggregates']['cost']
+
+                total_cost = cost_cement + cost_sand + cost_aggregate
+
                 issues.insert({'issue_id': issue_id, 'category' : category, 'points' : points_dest, 'cam1' : cam1_dest, 
                     'cam2' : cam2_dest, 'locality': locality, 'image_one_full' : full_path_one, 'image_two_full' : full_path_two, 
                     'description' : description, 'uploaded_by': session['username'], 'time' : stamp, 'detection' : det_dest, 'lat' : lat, 'lon' : lon,
-                    'label' : label, 'title' : title, 'status' : 'Not Fixed', 'volume' : volume})
+                    'label' : label, 'title' : title, 'status' : 'Not Fixed', 'volume' : volume, 'cement_cost' : cost_cement, 
+                    'sand_cost' : cost_sand, 'aggregate_cost' : cost_aggregate, 'total_cost' : total_cost})
 
                 
                 progress.insert({'issue_id' : issue_id, 'type' : 'created', 'time' : timestamp, 'date' : date, 'upload' : session['username']})
@@ -188,6 +199,7 @@ def existing_issues():
         all_issues_uploader = []
         all_issues_thumbnail = []
         all_issues_rank = []
+        all_issues_cost = []
         
 
         issuelist = range(0, all_issues.count(), 1)
@@ -202,12 +214,13 @@ def existing_issues():
                 all_issues_age.append(str(timeago.format(issue['time'], now)))
                 all_issues_category.append(issue['category'])
                 all_issues_uploader.append(issue['uploaded_by'])
+                all_issues_cost.append(issue['total_cost'])
                 all_issues_thumbnail.append(str("/downloads/%s" % issue['image_one_full'].split('/')[-1]))
         
 
         return render_template('pages/app/issues.html', issuelist=issuelist, all_issues_id=all_issues_id, all_issues_age=all_issues_age,
             all_issues_name=all_issues_name, all_issues_category=all_issues_category, all_issues_uploader=all_issues_uploader, 
-            all_issues_thumbnail=all_issues_thumbnail, all_issues_rank=all_issues_rank)
+            all_issues_thumbnail=all_issues_thumbnail, all_issues_rank=all_issues_rank, all_issues_cost=all_issues_cost)
             
     else:
         return redirect('/userlogin')
@@ -308,6 +321,7 @@ def view_issue(issue_id):
         issue_cam1_full = issue['cam1']
         issue_cam2_full = issue['cam2']
         issue_det_full = issue['detection']
+        issue_cost = issue['total_cost']
 
         issue_lat = str(issue['lat'])
         issue_lon = str(issue['lon'])
@@ -370,7 +384,7 @@ def view_issue(issue_id):
             issue_uploader=issue_uploader, issue_time=issue_time, issue_points=issue_points, issue_cam1=issue_cam1, issue_cam2=issue_cam2,
             issue_image_one=issue_image_one, issue_image_two=issue_image_two, issue_lat=issue_lat, issue_lon=issue_lon, issue_title=issue_title,
             issue_image_det=issue_image_det, issue_location=issue_location, issue_comments=issue_comments, progress_reports=progress_reports,
-            issue_volume=issue_volume, issue_document=issue_document, today_change=change_percent, issue_reported_number_today=all_counts)
+            issue_volume=issue_volume, issue_document=issue_document, today_change=change_percent, issue_reported_number_today=all_counts, issue_cost=issue_cost)
     else:
         return redirect('/userlogin')
 
@@ -773,6 +787,45 @@ def calculate_rank():
         rank = rank + 1
     
     return 'done'
+
+def get_quantities_material(volume_m3):
+    #Calculate quantity of dry cement, sand, aggregates for M20
+    #volume in cubic meter
+    
+    #one bag is 50kg and its cost on avg 250
+    kg_cement = 403.2*volume_m3
+    bag_cement = math.ceil(kg_cement/50)
+    cost_cement = bag_cement*250 
+
+    kg_sand = 609*volume_m3
+    bag_sand = math.ceil(kg_sand/50)
+    cost_sand = bag_sand*40
+
+    ton_aggregate = 1.2401*volume_m3
+    bag_aggregate = math.ceil(ton_aggregate) # available as one ton bag
+    cost_aggregate = bag_aggregate*325
+
+    ret = {
+        "cement" : {
+            "weight" : kg_cement,
+            "bags" : bag_cement,
+            "cost" : cost_cement
+        },
+        "sand" : {
+            "weight" : kg_sand,
+            "bags" : bag_sand,
+            "cost" : cost_sand
+        },
+        "aggregates" : {
+            "weight" : ton_aggregate,
+            "bags" : bag_aggregate,
+            "cost" : cost_aggregate
+        }
+    }
+
+        #quantity in kgs
+    return ret
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
