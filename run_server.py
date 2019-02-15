@@ -47,7 +47,25 @@ def index():
         Index
     '''
     if 'username' in session:
-        return render_template('pages/app/dashboard.html')
+        users = mongo.db.users
+        issues = mongo.db.issues
+        references = mongo.db.references
+        rankings = mongo.db.rankings
+
+        find_all_users = users.find({})
+        total_users = find_all_users.count()
+
+        find_references = references.find({})
+        total_references = find_references.count()
+
+        find_issues = issues.find({})
+        total_issues = find_issues.count()
+
+        find_top_rank = rankings.find_one({'rank' : 1})
+        top_issue_id = find_top_rank['issue_id']
+
+        return render_template('pages/app/dashboard.html', total_issues=total_issues, total_references=total_references, 
+            total_users=total_users, top_issue_id=top_issue_id)
     else:
         return redirect('/userlogin')
 
@@ -624,6 +642,29 @@ def create_issue_mobile():
 
         return render_template('pages/app/create.html')
 
+
+@app.route('/mobile/profile/<username>')
+def get_profile(username):
+
+    users = mongo.db.users
+    issues = mongo.db.issues
+    references = mongo.db.references
+
+    find_user = users.find_one({'name' : username})
+
+    user_email = find_user['email']
+    user_fname = find_user['fullname']
+    
+    issues_by_user = issues.find({'uploaded_by' : username})
+    issue_count = issues_by_user.count()
+
+    references_by_user = references.find({'referenced_by' : username})
+    ref_count = references_by_user.count()
+
+    return json.dumps({'username' : username, 'fullname' : user_fname, 'email' : user_email, 'issues' : str(issue_count), 
+        'references' : str(ref_count)})
+
+
 # User management
 # Login and register 
 @app.route('/register', methods=['POST', 'GET'])
@@ -723,7 +764,7 @@ def calculate_rank():
         reference_count = find_all_references.count()
         data.append((issue_id, reference_count))
     
-    data.sort(key=lambda x: x[1])
+    data.sort(key=lambda x: x[1], reverse=True)
 
     rank = 1
     for d in data:
